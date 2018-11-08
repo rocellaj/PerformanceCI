@@ -22,7 +22,7 @@ class App extends Component {
             <div className="App">
                 <h1>Users</h1>
                 {this.state.users.map(user =>
-                <div key={user.id}>user: {user.name} Password: {user.password}</div>
+                <div key={user.id}>user: {user.name} Password: {user.type}</div>
               )}
             </div>
         );
