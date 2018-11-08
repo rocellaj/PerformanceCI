@@ -39,3 +39,29 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
+// const express = require('express')
+// const db = require('./routes/users')
+// const bodyParser = require('body-parser')
+// const app = express()
+// const port = 3001
+
+// app.use(bodyParser.json())
+// app.use(
+//   bodyParser.urlencoded({
+//     extended: true,
+//   })
+// )
+// app.get('/', (request, response) => {
+//     response.json({ info: 'This is a sample application' })
+//   })
+
+// app.get('/users', db.getUsers)
+// app.get('/expense', db.getExpense)
+// app.post('/expense', db.createExpense)
+
+
+// app.listen(port, () => {
+//     console.log(`App running on port ${port}.`)
+//   })
