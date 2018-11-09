@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"node ./bin/www\" \"cd client && npm start\""
+    "start": "concurrently \"node app.js\" \"cd client && npm start\""
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

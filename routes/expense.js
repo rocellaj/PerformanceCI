@@ -11,9 +11,8 @@ const pool = new Pool({
 })
 
 router.get('/', function(req, res, next) {
-  // debugger;
-  res.render('index', { title: 'USERS' });
-  pool.query('SELECT * FROM users ORDER BY id ASC', (error, results) => {
+
+  pool.query('SELECT * FROM expense ORDER BY id ASC', (error, results) => {
     if (error) {
       throw error
     }
