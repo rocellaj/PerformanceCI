@@ -32,13 +32,15 @@ class App extends Component {
    render() {
         return (
             <div className="App">
-                <h1>Users</h1>
-                {this.state.users.map(user =>
-                <div key={user.id}>user: {user.name} Email: {user.email}</div>
-              )}
-              {this.state.expenses.map(expense =>
-                <div key={expense.id}>user: {expense.username} Type: {expense.type}</div>
-              )}
+                <div className="App-logo">Users</div>
+                <p className="App-header">
+                    {this.state.users.map(user =>
+                    <div key={user.id}>user: {user.name} Email: {user.email}</div>
+                    )}
+                    {this.state.expenses.map(expense =>
+                        <div key={expense.id}>user: {expense.username} Type: {expense.type}</div>
+                    )}
+                    </p>
             </div>
         );
     }
