@@ -3,6 +3,11 @@
 }
 
 .App-logo {
+  width: 600px;
+  padding: 25px;
+  margin: 50px;
+  background-color: rgb(220, 247, 255);
+  margin: auto;
   animation: App-logo-spin 2s;
 }
 
@@ -15,6 +20,16 @@
   justify-content: center;
   font-size: calc(5px + 2vmin);
   color: rgb(0, 0, 0);
+}
+
+.App-container {
+  display: 'flex';
+  flex-wrap: 'wrap';
+}
+ 
+
+.App-input {
+  margin: auto;
 }
 
 @keyframes App-logo-spin {
@@ -30,3 +45,4 @@
     transform: scale(1);
   }
 } 
+

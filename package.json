@@ -6,14 +6,18 @@
     "start": "concurrently \"node app.js\" \"cd client && npm start\""
   },
   "dependencies": {
+    "@material-ui/core": "^3.5.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
     "knex": "^0.15.2",
+    "material-ui": "^0.20.2",
     "morgan": "~1.9.0",
-    "pg": "^7.6.1"
+    "muicss": "^0.9.41",
+    "pg": "^7.6.1",
+    "react": "^16.6.3"
   },
   "devDependencies": {
     "concurrently": "^4.0.1"

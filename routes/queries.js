@@ -24,8 +24,6 @@ const getUsers = (request, response) => {
     // console.log (results.row)
   }
 
-  
-
   const getExpense = (request, response) => {
     pool.query('SELECT * FROM expense ORDER BY id ASC', (error, results) => {
       if (error) {
