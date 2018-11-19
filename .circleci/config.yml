@@ -33,6 +33,7 @@ jobs:
       - run: 'sudo apt-get update' 
       # - run: 'java -version'
       - run: 'sudo apt install default-jre'
+      - run: 'java -version'
       # - run: 'sudo apt-get install openjdk-7-jre-headless'
       # - run: 'wget -c http://ftp.ps.pl/pub/apache//jmeter/binaries/apache-jmeter-5.0.tgz'
       # - run: 'ls -al'
