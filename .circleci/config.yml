@@ -27,8 +27,9 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
-      - run: jmeter
-
+      - run: pwd
+      - run: ls -al
+      
       - save_cache:
           paths:
             - node_modules
