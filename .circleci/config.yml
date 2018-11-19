@@ -34,8 +34,8 @@ jobs:
       - run: 'wget -c http://ftp.ps.pl/pub/apache//jmeter/binaries/apache-jmeter-5.0.tgz'
       - run: 'ls -al'
       - run: 'tar xzf apache-jmeter-5.0.tgz'
-      # - run: 'ls -al'
-      # - run: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
+      - run: 'ls -al'
+      - run: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
 
            
       - save_cache:
