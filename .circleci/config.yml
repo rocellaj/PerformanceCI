@@ -27,6 +27,7 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
+      - run: pwd
 
       - save_cache:
           paths:
