@@ -37,7 +37,7 @@ jobs:
       # - run: 'ls -al'
       # - run: 'cd apache-jmeter-5.0'
       # - run: 'apache-jmeter-5.0/bin/./jmeter'
-      - run: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
+      # - run: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
 
            
       - save_cache:
