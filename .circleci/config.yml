@@ -32,7 +32,9 @@ jobs:
           #name: jmeter install 
       - run: 'sudo apt-get update' 
       # - run: 'java -version'
-      - run: 'sudo dpkg -i oracle-java8-installer_8u51+8u51arm-1-webupd8-0_all.deb'
+      - run: 'sudo add-apt-repository ppa:openjdk-r/ppa'
+      - run: sudo apt-get update 
+      - run: sudo apt-get install openjdk-8-jdk
       - run: 'java -version'
       # - run: 'sudo apt-get install openjdk-7-jre-headless'
       # - run: 'wget -c http://ftp.ps.pl/pub/apache//jmeter/binaries/apache-jmeter-5.0.tgz'
