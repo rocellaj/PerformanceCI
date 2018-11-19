@@ -33,7 +33,7 @@ jobs:
       - run: 'sudo apt-get install openjdk-7-jre-headless'
       - run: 'wget -c http://ftp.ps.pl/pub/apache//jmeter/binaries/apache-jmeter-5.0.tgz'
       - run: 'ls -al'
-      - run: 'gzip -dc apache-jmeter-5.0.tgz | tar xvf -'
+      - run: 'tar'
       # - run: 'ls -al'
       # - run: 'cd apache-jmeter-5.0'
       # - run: 'apache-jmeter-5.0/bin/./jmeter'
