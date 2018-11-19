@@ -27,6 +27,7 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
+      - run: yarn add jmeter
       - run: pwd
       - run: ls -al
       
