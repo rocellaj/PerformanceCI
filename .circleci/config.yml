@@ -28,7 +28,7 @@ jobs:
 
       - run: yarn install
       - run: npm install jmeter
-      - run: jmeter
+      # - run: jmeter
       - run: pwd
       - run: ls -al
       
