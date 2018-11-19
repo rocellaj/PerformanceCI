@@ -27,7 +27,7 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
-      - run: pwd
+      - run: bzt poc_jmeter_2.jmx
 
       - save_cache:
           paths:
