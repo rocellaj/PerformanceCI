@@ -27,13 +27,13 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
-      - run: 
-          name: jmeter install 
-          command: 'sudo apt-get update' 
-          command: 'sudo apt-get install openjdk-7-jre-headless'
-          command: 'wget -c http://ftp.ps.pl/pub/apache//jmeter/binaries/apache-jmeter-3.0.tgz'
-          command: 'tar -xf apache-jmeter-3.0.tgz'
-          command: 'apache-jmeter-3.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
+      #- run: 
+          #name: jmeter install 
+          - run: 'sudo apt-get update' 
+          - run: 'sudo apt-get install openjdk-7-jre-headless'
+          - run: 'wget -c http://ftp.ps.pl/pub/apache//jmeter/binaries/apache-jmeter-3.0.tgz'
+          - run: 'tar -xf apache-jmeter-3.0.tgz'
+          -  run: 'apache-jmeter-3.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
 
            
       - save_cache:
