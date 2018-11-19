@@ -27,7 +27,7 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
-      - run: 'sudo apt-get install openjdk-8-jre'
+      - run: 'java -version'
       #- run: 
           #name: jmeter install 
       # - run: 'sudo apt-get update' 
