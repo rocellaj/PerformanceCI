@@ -21,6 +21,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
   benchmark: 
+ 
       # - run: 
       #   name: 'sudo apt-get update'
       # - run: 'java -version'
@@ -38,6 +39,7 @@ jobs:
       #     command: 'cd apache-jmeter-5.0'
       # - run: 'apache-jmeter-5.0/bin/./jmeter'
       #  - run: 'ls -al'
+    steps: 
       - run: 
           name: run load
           command: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
