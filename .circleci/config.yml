@@ -39,8 +39,8 @@ jobs:
     docker: 
       - image: circleci/openjdk:8
         command: 
-          'sudo apt-get install python2.7'
-      # - image: circleci/python:2.7
+          'java -version'
+      - image: circleci/python:2.7
 
     working_directory: ~/devTings
 
