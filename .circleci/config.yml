@@ -20,20 +20,20 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-  jmeter_test: 
-    docker:
-      - image: circleci/openjdk:8-jdk-node-browsers
+  # jmeter_test: 
+  #   docker:
+  #     - image: circleci/openjdk:8-jdk-node-browsers
 
-    working_directory: ~/devTings
+  #   working_directory: ~/devTings
 
-    steps: 
-      - checkout
-      - run: 'ls -al'
-      # - run: "sudo service docker start"
-      - run: pip install bzt
-      #- run: 'sudo docker run -it --rm -v benchmark/tmp:/bzt-configs blazemeter/taurus benchmark/scripts/poc_jmeter_2.yml'
-      # - run: 
-      #     command: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
+  #   steps: 
+  #     - checkout
+  #     - run: 'ls -al'
+  #     # - run: "sudo service docker start"
+  #     - run: pip install bzt
+  #     #- run: 'sudo docker run -it --rm -v benchmark/tmp:/bzt-configs blazemeter/taurus benchmark/scripts/poc_jmeter_2.yml'
+  #     # - run: 
+  #     #     command: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
 
 taurus_test: 
   docker: 
@@ -51,7 +51,7 @@ workflows:
   build_deploy: 
     jobs: 
       - build
-      - jmeter_test: 
+      - taurus_test: 
           filters: 
             branches: 
               only: master 
