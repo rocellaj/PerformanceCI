@@ -35,15 +35,15 @@ jobs:
   #     # - run: 
   #     #     command: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
 
-taurus_test: 
-  docker: 
-    - image: circleci/python:2.7
+  taurus_test: 
+    docker: 
+      - image: circleci/python:2.7
 
-  working_directory: ~/devTings
+    working_directory: ~/devTings
 
-  steps: 
-    - checkout
-    - run: 'pip -V'
+    steps: 
+      - checkout
+      - run: 'pip -V'
 
 workflows: 
   version: 2 
