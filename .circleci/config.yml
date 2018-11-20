@@ -29,7 +29,7 @@ jobs:
     steps: 
       - run: 
           command: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
-          
+
 workflows: 
   version: 2 
 
@@ -37,9 +37,9 @@ workflows:
     jobs: 
       - build
       - benchmark_test: 
-        branches: master 
-        requires: 
-          -build
+          branches: master 
+          requires: 
+            - build
 
 
 
