@@ -41,6 +41,9 @@ jobs:
       #  - run: 'ls -al'
     docker:
       - image: circleci/openjdk:8-jdk-node-browsers
+
+    working_directory: ~/devTings
+    
     steps: 
       - run: 
           name: run load
