@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:7.10
+      - image: circleci/node:8
 
     working_directory: ~/devTings
 
@@ -28,7 +28,7 @@ jobs:
 
     steps: 
      - checkout
-      - run: ls -al
+      - run: 'ls -al'
       - run: 
           command: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
 
