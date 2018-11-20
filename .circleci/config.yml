@@ -30,7 +30,7 @@ jobs:
       - checkout
       - run: 'ls -al'
       - run: 
-          command: 'benchmark/apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
+          command: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
 
 workflows: 
   version: 2 
