@@ -45,8 +45,8 @@ jobs:
     steps: 
       - checkout
       - run: 'sudo pip install bzt'
-      # - run: 'java -version'
-      - run: 'bzt benchmark/scripts/poc_jmeter_2.yml'
+      - run: 'ls -al'
+      # - run: 'bzt benchmark/scripts/poc_jmeter_2.yml'
 
 workflows: 
   version: 2 
