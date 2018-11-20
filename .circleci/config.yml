@@ -30,7 +30,7 @@ i
      
       #- run: 
           #name: jmeter install 
-      - run: 'sudo apt-get update' 
+      - run: 'sudo apt-get update'
       # - run: 'java -version'
       # - run: 'sudo add-apt-repository ppa:openjdk-r/ppa'
       # - run: sudo apt-get update 
@@ -42,8 +42,9 @@ i
       # - run: 'tar xzf apache-jmeter-5.0.tgz'
       # - run: 'ls -al'
       - run: 'cd apache-jmeter-5.0'
-      - run: 'apache-jmeter-5.0/bin/./jmeter'
-      - run: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
+      # - run: 'apache-jmeter-5.0/bin/./jmeter'
+       - run: 'ls -al'
+      # - run: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
 
            
       - save_cache:
