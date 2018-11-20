@@ -38,7 +38,7 @@ jobs:
   taurus_test: 
     docker: 
       - image: circleci/python:2.7
-      - image: openjdk:8-jdk-node-browsers
+      - image: openjdk:8
 
     working_directory: ~/devTings
 
