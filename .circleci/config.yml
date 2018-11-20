@@ -41,8 +41,8 @@ jobs:
       - run: 'ls -al'
       # - run: 'tar xzf apache-jmeter-5.0.tgz'
       # - run: 'ls -al'
-      # - run: 'cd apache-jmeter-5.0'
-      # - run: 'apache-jmeter-5.0/bin/./jmeter'
+      - run: 'cd apache-jmeter-5.0'
+      - run: 'apache-jmeter-5.0/bin/./jmeter'
       #  - run: 'ls -al'
       # - run: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
 
