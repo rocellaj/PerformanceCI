@@ -21,6 +21,28 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
   benchmark_test: 
+    docker:
+      - image: circleci/openjdk:8-jdk-node-browsers
+
+    working_directory: ~/devTings
+
+    steps: 
+      - run: 
+          command: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
+          
+workflows: 
+  version: 2 
+
+  build_deploy: 
+    jobs: 
+      - build
+      - benchmark_test: 
+        branches: master 
+        requires: 
+          -build
+
+
+
  
       # - run: 
       #   name: 'sudo apt-get update'
@@ -39,25 +61,3 @@ jobs:
       #     command: 'cd apache-jmeter-5.0'
       # - run: 'apache-jmeter-5.0/bin/./jmeter'
       #  - run: 'ls -al'
-    docker:
-      - image: circleci/openjdk:8-jdk-node-browsers
-
-    working_directory: ~/devTings
-
-    steps: 
-      - run: 
-          name: run load
-          command: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
-
-      # # run tests!
-      # - run: yarn test
-workflows: 
-  version: 2 
-
-  build_deploy: 
-    jobs: 
-      - build
-      - benchmark_test: 
-        branches: master 
-        requires: 
-          -build
