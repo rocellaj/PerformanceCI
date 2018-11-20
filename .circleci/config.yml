@@ -30,7 +30,7 @@ jobs:
       - checkout
       - run: 'ls -al'
       - run: 
-          command: 'apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
+          command: 'benchmark/apache-jmeter-5.0/bin/./jmeter -n -t poc_jmeter_2.jmx'
 
 workflows: 
   version: 2 
@@ -45,9 +45,6 @@ workflows:
           requires: 
             - build
 
-
-
- 
       # - run: 
       #   name: 'sudo apt-get update'
       # - run: 'java -version'
