@@ -20,7 +20,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-  benchmark_test: 
+  jmeter_test: 
     docker:
       - image: circleci/openjdk:8-jdk-node-browsers
 
@@ -35,13 +35,23 @@ jobs:
       # - run: 
       #     command: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
 
+taurus_test: 
+  docker: 
+    - image: circleci/python: 2/7
+
+  working_directory: ~/devTings
+
+  steps: 
+    - checkout
+    - run: 'pip -V'
+
 workflows: 
   version: 2 
 
   build_deploy: 
     jobs: 
       - build
-      - benchmark_test: 
+      - jmeter_test: 
           filters: 
             branches: 
               only: master 
