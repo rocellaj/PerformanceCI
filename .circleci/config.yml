@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/openjdk:8-jdk-node-browsers
+      - image: circleci/node:7.10
 
     working_directory: ~/devTings
 
@@ -39,6 +39,8 @@ jobs:
       #     command: 'cd apache-jmeter-5.0'
       # - run: 'apache-jmeter-5.0/bin/./jmeter'
       #  - run: 'ls -al'
+    docker:
+      - image: circleci/openjdk:8-jdk-node-browsers
     steps: 
       - run: 
           name: run load
