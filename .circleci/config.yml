@@ -38,7 +38,8 @@ jobs:
   taurus_test: 
     docker: 
       - image: circleci/openjdk:8
-          command: 'java -version'
+        command: 
+          java -version
       - image: circleci/python:2.7
 
     working_directory: ~/devTings
