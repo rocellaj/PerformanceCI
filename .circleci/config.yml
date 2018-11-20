@@ -20,7 +20,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-  benchmark: 
+  benchmark_test: 
  
       # - run: 
       #   name: 'sudo apt-get update'
@@ -43,7 +43,7 @@ jobs:
       - image: circleci/openjdk:8-jdk-node-browsers
 
     working_directory: ~/devTings
-    
+
     steps: 
       - run: 
           name: run load
@@ -51,3 +51,13 @@ jobs:
 
       # # run tests!
       # - run: yarn test
+workflows: 
+  version: 2 
+
+  build_deploy: 
+    jobs: 
+      - build
+      - benchmark_test: 
+        branches: master 
+        requires: 
+          -build
