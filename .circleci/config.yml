@@ -38,7 +38,7 @@ jobs:
   taurus_test: 
     docker: 
       - image: circleci/python:2.7
-      - image: circleci/openjdk:8-jdk-node-browsers
+      - image: openjdk:8-jdk-node-browsers
 
     working_directory: ~/devTings
 
@@ -46,7 +46,7 @@ jobs:
       - checkout
       - run: 'sudo pip install bzt'
       - run: java -version
-      # - run: 'bzt benchmark/scripts/poc_jmeter_2.yml'
+      - run: 'bzt benchmark/scripts/poc_jmeter_2.yml'
 
 workflows: 
   version: 2 
