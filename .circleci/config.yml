@@ -43,7 +43,7 @@ jobs:
 
     steps: 
       - checkout
-      - run: 'pip -V'
+      - run: 'sudo pip install bzt'
 
 workflows: 
   version: 2 
