@@ -37,7 +37,7 @@ jobs:
 
 taurus_test: 
   docker: 
-    - image: circleci/python: 2/7
+    - image: circleci/python:2.7
 
   working_directory: ~/devTings
 
