@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8-node-browsers-legacy
+      - image: circleci/node:8
 
     working_directory: ~/devTings
 
@@ -37,7 +37,7 @@ jobs:
 
   taurus_test: 
     docker: 
-      # - image: openjdk:8
+      - image: openjdk:8
       - image: python:2.7
 
     working_directory: ~/devTings
