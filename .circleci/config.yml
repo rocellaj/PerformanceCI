@@ -29,8 +29,9 @@ jobs:
     steps: 
       - checkout
       - run: 'ls -al'
-      - run: 
-          command: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
+      - run: pip install bzt 
+      # - run: 
+      #     command: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
 
 workflows: 
   version: 2 
