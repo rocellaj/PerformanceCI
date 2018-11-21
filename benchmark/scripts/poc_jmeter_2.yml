@@ -4,14 +4,14 @@ execution:
   hold-for: 1m
   scenario: simple
 
-scenarios:
-  simple:
-    think-time: 0.75
-    requests:
-    - http://blazedemo.com/
 # scenarios:
 #   simple:
-#     script: benchmark/scripts/poc_jmeter_2.jmx
+#     think-time: 0.75
+#     requests:
+#     - http://blazedemo.com/
+scenarios:
+  simple:
+    script: benchmark/scripts/poc_jmeter_2.jmx
 
 modules:
   jmeter:
@@ -34,8 +34,8 @@ settings:
   artifacts-dir: benchmark/tmp
     
 reporting:
-- module: junit-xml
-  summary: false  # overall samples count and percent of failures
+- module: final_stats
+  summary: true  # overall samples count and percent of failures
   percentiles: false  # display average times and percentiles
   summary-labels: false # provides list of sample labels, status, percentage of completed, avg time and errors
   failed-labels: false  # provides list of sample labels with failures
