@@ -26,8 +26,8 @@ modules:
 #     # - jpgc-casutg
   console: 
     disable: false 
-    screen: dummy 
-    
+    #screen: dummy 
+
 
 settings: 
   artifacts-dir: benchmark/tmp
