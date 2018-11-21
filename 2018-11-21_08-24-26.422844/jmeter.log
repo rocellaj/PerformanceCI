@@ -1,0 +1,80 @@
+2018-11-21 08:24:57,166 INFO o.a.j.u.JMeterUtils: Setting Locale to en_CA
+2018-11-21 08:24:57,184 INFO o.a.j.JMeter: Loading user properties from: /Users/rocellajimenez/.bzt/jmeter-taurus/4.0/bin/user.properties
+2018-11-21 08:24:57,185 INFO o.a.j.JMeter: Loading system properties from: /Users/rocellajimenez/.bzt/jmeter-taurus/4.0/bin/system.properties
+2018-11-21 08:24:57,185 INFO o.a.j.JMeter: Setting System properties from file: /Users/rocellajimenez/Desktop/poc_v2/2018-11-21_08-24-26.422844/system.properties
+2018-11-21 08:24:57,189 INFO o.a.j.JMeter: Copyright (c) 1998-2018 The Apache Software Foundation
+2018-11-21 08:24:57,189 INFO o.a.j.JMeter: Version 4.0 r1823414
+2018-11-21 08:24:57,189 INFO o.a.j.JMeter: java.version=1.8.0_171
+2018-11-21 08:24:57,189 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2018-11-21 08:24:57,190 INFO o.a.j.JMeter: os.name=Mac OS X
+2018-11-21 08:24:57,190 INFO o.a.j.JMeter: os.arch=x86_64
+2018-11-21 08:24:57,190 INFO o.a.j.JMeter: os.version=10.14
+2018-11-21 08:24:57,190 INFO o.a.j.JMeter: file.encoding=UTF-8
+2018-11-21 08:24:57,190 INFO o.a.j.JMeter: Max memory     =3817865216
+2018-11-21 08:24:57,190 INFO o.a.j.JMeter: Available Processors =8
+2018-11-21 08:24:57,193 INFO o.a.j.JMeter: Default Locale=English (Canada)
+2018-11-21 08:24:57,193 INFO o.a.j.JMeter: JMeter  Locale=English (Canada)
+2018-11-21 08:24:57,193 INFO o.a.j.JMeter: JMeterHome=/Users/rocellajimenez/.bzt/jmeter-taurus/4.0
+2018-11-21 08:24:57,193 INFO o.a.j.JMeter: user.dir  =/Users/rocellajimenez/Desktop/poc_v2
+2018-11-21 08:24:57,193 INFO o.a.j.JMeter: PWD       =/Users/rocellajimenez/Desktop/poc_v2
+2018-11-21 08:25:02,198 INFO o.a.j.JMeter: IP: 172.16.0.102 Name: Rocellas-MacBook-Pro.local FullName: 172.16.0.102
+2018-11-21 08:25:02,198 INFO o.a.j.JMeter: user.classpath=/Users/rocellajimenez/Desktop/poc_v2/2018-11-21_08-24-26.422844:/Users/rocellajimenez/Desktop/poc_v2/2018-11-21_08-24-26.422844
+2018-11-21 08:25:02,199 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/rocellajimenez/Desktop/poc_v2/2018-11-21_08-24-26.422844
+2018-11-21 08:25:02,200 INFO o.a.j.JMeter: Adding to classpath and loader: /Users/rocellajimenez/Desktop/poc_v2/2018-11-21_08-24-26.422844
+2018-11-21 08:25:02,203 INFO o.a.j.s.FileServer: Default base='/Users/rocellajimenez/Desktop/poc_v2'
+2018-11-21 08:25:02,224 INFO o.a.j.s.FileServer: Set new base='/Users/rocellajimenez/Desktop/poc_v2/2018-11-21_08-24-26.422844'
+2018-11-21 08:25:02,348 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2018-11-21 08:25:02,365 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2018-11-21 08:25:02,369 INFO o.a.j.s.SaveService: Using SaveService properties version 4.0
+2018-11-21 08:25:02,374 INFO o.a.j.s.SaveService: Loading file: /Users/rocellajimenez/Desktop/poc_v2/2018-11-21_08-24-26.422844/modified_requests.jmx
+2018-11-21 08:25:02,434 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2018-11-21 08:25:02,436 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2018-11-21 08:25:02,453 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-11-21 08:25:02,453 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-11-21 08:25:02,453 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-11-21 08:25:02,453 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-11-21 08:25:02,453 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2018-11-21 08:25:02,453 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2018-11-21 08:25:02,475 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2018-11-21 08:25:02,476 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2018-11-21 08:25:02,476 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2018-11-21 08:25:02,480 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2018-11-21 08:25:02,480 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2018-11-21 08:25:02,892 INFO o.a.j.JMeter: Running test (1542806702891)
+2018-11-21 08:25:02,936 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : simple
+2018-11-21 08:25:02,936 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group simple.
+2018-11-21 08:25:02,936 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2018-11-21 08:25:02,942 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2018-11-21 08:25:02,943 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+2018-11-21 08:25:08,949 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2018-11-21 08:25:08,949 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2018-11-21 08:25:08,949 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2018-11-21 08:25:08,949 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2018-11-21 08:25:08,950 INFO o.a.j.t.JMeterThread: Thread started: simple 1-1
+2018-11-21 08:25:09,727 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = Rocellas-MacBook-Pro.local
+2018-11-21 08:25:09,732 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2018-11-21 08:25:09,943 INFO o.a.j.p.h.s.LazySchemeSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2018-11-21 08:25:09,952 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2018-11-21 08:25:09,952 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2018-11-21 08:25:10,127 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2018-11-21 08:25:10,132 INFO o.a.j.u.SSLManager: KeyStore created OK
+2018-11-21 08:25:10,132 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2018-11-21 08:25:10,526 INFO o.a.j.p.h.p.BaseParser: Created org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-11-21 08:25:10,609 INFO o.a.j.p.h.s.ResourcesDownloader: Creating ResourcesDownloader with keepalive_inseconds : 60
+2018-11-21 08:25:20,973 INFO o.a.j.t.JMeterThread: Thread started: simple 1-2
+2018-11-21 08:25:32,997 INFO o.a.j.t.JMeterThread: Thread started: simple 1-3
+2018-11-21 08:25:45,018 INFO o.a.j.t.JMeterThread: Thread started: simple 1-4
+2018-11-21 08:25:57,051 INFO o.a.j.t.JMeterThread: Thread started: simple 1-5
+2018-11-21 08:27:33,221 INFO c.b.j.t.c.ConcurrencyThreadStarter: Done supplying threads
+2018-11-21 08:27:33,282 INFO o.a.j.t.JMeterThread: Thread is done: simple 1-2
+2018-11-21 08:27:33,283 INFO o.a.j.t.JMeterThread: Thread finished: simple 1-2
+2018-11-21 08:27:33,290 INFO o.a.j.t.JMeterThread: Thread is done: simple 1-3
+2018-11-21 08:27:33,290 INFO o.a.j.t.JMeterThread: Thread finished: simple 1-3
+2018-11-21 08:27:33,363 INFO o.a.j.t.JMeterThread: Thread is done: simple 1-4
+2018-11-21 08:27:33,363 INFO o.a.j.t.JMeterThread: Thread finished: simple 1-4
+2018-11-21 08:27:33,367 INFO o.a.j.t.JMeterThread: Thread is done: simple 1-5
+2018-11-21 08:27:33,367 INFO o.a.j.t.JMeterThread: Thread finished: simple 1-5
+2018-11-21 08:27:33,956 INFO o.a.j.t.JMeterThread: Thread is done: simple 1-1
+2018-11-21 08:27:33,956 INFO o.a.j.t.JMeterThread: Thread finished: simple 1-1
+2018-11-21 08:27:33,957 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2018-11-21 08:27:33,959 INFO o.a.j.e.StandardJMeterEngine: Forced JVM shutdown requested at end of test

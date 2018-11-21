@@ -11,10 +11,10 @@ scenarios:
     - http://blazedemo.com/
     - http://blazedemo.com/vacation.html
 
-# reporting:
-# - final-stats
+reporting:
+- final-stats
 
-# modules:
-#   console:
-#     # disable console reporter
-#     disable: false  # default: auto
+modules:
+  console:
+    # disable console reporter
+    disable: false  # default: auto
