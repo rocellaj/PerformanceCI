@@ -1,0 +1,66 @@
+[2018-11-21 09:11:44,150 INFO root] Taurus CLI Tool v1.13.0
+[2018-11-21 09:11:44,150 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': True, 'log': '/var/folders/_7/c5br59cd02v6qkd_sqxjqtl40000gn/T/bzt_9ulDXu.log', 'option': None, 'aliases': []}
+[2018-11-21 09:11:44,151 DEBUG root] Python: CPython 2.7.15
+[2018-11-21 09:11:44,151 DEBUG root] OS: ('Darwin', 'Rocellas-MacBook-Pro.local', '18.0.0', 'Darwin Kernel Version 18.0.0: Wed Aug 22 20:13:40 PDT 2018; root:xnu-4903.201.2~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2018-11-21 09:11:44,151 INFO root] Starting with configs: ['poc_jmeter_2.yml']
+[2018-11-21 09:11:44,151 DEBUG root] Using personal config: /Users/rocellajimenez/.bzt-rc
+[2018-11-21 09:11:44,151 INFO Engine] Configuring...
+[2018-11-21 09:11:44,151 DEBUG Engine] No machine configs dir: /usr/local/Cellar/bzt/1.13.0/libexec/bin/../etc/bzt.d
+[2018-11-21 09:11:44,151 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-11-21 09:11:44,151 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-11-21 09:11:44,152 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2018-11-21 09:11:44,176 DEBUG Engine] User configs list: ['/Users/rocellajimenez/.bzt-rc', 'poc_jmeter_2.yml']
+[2018-11-21 09:11:44,177 DEBUG Engine.Configuration] Configs: ['/Users/rocellajimenez/.bzt-rc', 'poc_jmeter_2.yml']
+[2018-11-21 09:11:44,177 DEBUG Engine.Configuration] Reading /Users/rocellajimenez/.bzt-rc as YAML
+[2018-11-21 09:11:44,180 DEBUG Engine.Configuration] Reading poc_jmeter_2.yml as YAML
+[2018-11-21 09:11:44,184 DEBUG Engine.Configuration] Configs: ['/Users/rocellajimenez/.bzt-rc', 'poc_jmeter_2.yml']
+[2018-11-21 09:11:44,184 DEBUG Engine.Configuration] Reading /Users/rocellajimenez/.bzt-rc as YAML
+[2018-11-21 09:11:44,187 DEBUG Engine.Configuration] Reading poc_jmeter_2.yml as YAML
+[2018-11-21 09:11:44,198 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.13.0&installID=macos-8c8590bd2b94
+[2018-11-21 09:11:44,198 DEBUG HTTPClient] Making HTTP request GET http://gettaurus.org/updates/?version=1.13.0&installID=macos-8c8590bd2b94
+[2018-11-21 09:11:44,203 INFO Engine] Artifacts dir: /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410
+[2018-11-21 09:11:44,204 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410/effective
+[2018-11-21 09:11:44,207 DEBUG urllib3.connectionpool] Starting new HTTP connection (1): gettaurus.org:80
+[2018-11-21 09:11:44,207 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410/effective.yml
+[2018-11-21 09:11:44,236 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410/effective.json
+[2018-11-21 09:11:44,236 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410/merged.yml
+[2018-11-21 09:11:44,237 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410/merged.yml
+[2018-11-21 09:11:44,239 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410/merged.json
+[2018-11-21 09:11:44,239 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410/merged.json
+[2018-11-21 09:11:44,239 DEBUG Engine] Add existing artifact (move=False): poc_jmeter_2.yml
+[2018-11-21 09:11:44,240 DEBUG Engine] Copying poc_jmeter_2.yml to /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410/poc_jmeter_2.yml
+[2018-11-21 09:11:44,240 DEBUG Engine.Environment] Replace 'TAURUS_ARTIFACTS_DIR' in environment
+[2018-11-21 09:11:44,241 DEBUG root] Closing log handler: /var/folders/_7/c5br59cd02v6qkd_sqxjqtl40000gn/T/bzt_9ulDXu.log
+[2018-11-21 09:11:44,241 DEBUG root] Switched writing logs to /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410/bzt.log
+[2018-11-21 09:11:44,241 DEBUG root] Linting config
+[2018-11-21 09:11:44,243 INFO Engine] Preparing...
+[2018-11-21 09:11:44,244 DEBUG Engine] Module config: consolidator {'class': u'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2018-11-21 09:11:44,244 DEBUG root] Importing module: bzt.modules.aggregator
+[2018-11-21 09:11:44,325 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2018-11-21 09:11:44,325 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2018-11-21 09:11:44,325 DEBUG Engine] Module config: monitoring {'class': u'bzt.modules.monitoring.Monitoring'}
+[2018-11-21 09:11:44,326 DEBUG root] Importing module: bzt.modules.monitoring
+[2018-11-21 09:11:44,327 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2018-11-21 09:11:44,327 DEBUG Engine] Module config: local {'class': u'bzt.modules.provisioning.Local'}
+[2018-11-21 09:11:44,327 DEBUG root] Importing module: bzt.modules.provisioning
+[2018-11-21 09:11:44,327 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2018-11-21 09:11:44,327 DEBUG Engine] Module config: jmeter {'force-ctg': True, 'detect-plugins': True, 'class': u'bzt.modules.jmeter.JMeterExecutor', 'version': 5.0, 'download-link': u'https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip', 'plugins': [u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst', u'jpgc-json=2.2', u'jmeter-ftp', u'jpgc-casutg'], 'path': u'benchmark/jmeter/apache-jmeter-5.0/bin/jmeter', 'properties': {'jmeter.save.saveservice.autoflush': u'true', 'jmeter.save.saveservice.connect_time': u'true', 'summariser.name': u'', 'jmeterengine.force.system.exit': u'true'}, 'protocol-handlers': {'http': u'bzt.jmx.http.HTTPProtocolHandler'}}
+[2018-11-21 09:11:44,327 DEBUG root] Importing module: bzt.modules.jmeter
+[2018-11-21 09:11:44,335 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/jmeter.pyc'>
+[2018-11-21 09:11:44,335 DEBUG Engine.local] Preparing executor: None/4611519632
+[2018-11-21 09:11:44,335 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410/jmeter.log
+[2018-11-21 09:11:44,335 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2018-11-21 09:11:44,336 DEBUG Engine.jmeter] Port 4445 is free
+[2018-11-21 09:11:44,336 DEBUG Engine.jmeter] Using port 4445 for management
+[2018-11-21 09:11:44,337 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2018-11-21 09:11:44,435 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_171"
+Java(TM) SE Runtime Environment (build 1.8.0_171-b11)
+Java HotSpot(TM) 64-Bit Server VM (build 25.171-b11, mixed mode)
+[2018-11-21 09:11:44,435 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2018-11-21 09:11:44,436 INFO Engine.jmeter.JMeter] Will install JMeter into /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/benchmark/jmeter/apache-jmeter-5.0
+[2018-11-21 09:11:44,436 INFO Engine.jmeter.JMeter] Downloading: https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip
+[2018-11-21 09:11:44,568 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): archive.apache.org:443
+[2018-11-21 09:11:44,642 DEBUG urllib3.connectionpool] http://gettaurus.org:80 "GET /updates/?version=1.13.0&installID=macos-8c8590bd2b94 HTTP/1.1" 200 59
+[2018-11-21 09:11:44,644 DEBUG Engine] Taurus updates info: {u'needsUpgrade': True, u'latest': u'1.13.1'}
+[2018-11-21 09:11:44,644 WARNING Engine] There is newer version of Taurus 1.13.1 available, consider upgrading. What's new: http://gettaurus.org/docs/Changelog/
+[2018-11-21 09:11:44,989 DEBUG urllib3.connectionpool] https://archive.apache.org:443 "GET /dist/jmeter/binaries/apache-jmeter-5.0.zip HTTP/1.1" 200 56952455

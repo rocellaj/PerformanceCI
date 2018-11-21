@@ -1,0 +1,24 @@
+---
+execution:
+- concurrency: 1
+  hold-for: 1m
+  ramp-up: 1m
+  scenario: simple
+modules:
+  jmeter:
+    detect-plugins: true
+    download-link: https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip
+    force-ctg: true
+    path: benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
+    plugins:
+    - jpgc-json=2.2
+    - jmeter-ftp
+    - jpgc-casutg
+    version: 5.0
+scenarios:
+  simple:
+    requests:
+    - http://blazedemo.com/
+    - http://blazedemo.com/vacation.html
+    think-time: 0.75
+
