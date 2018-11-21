@@ -88,13 +88,18 @@
  "settings": {
   "aggregator": "consolidator", 
   "env": {
+   "TAURUS_ARTIFACTS_DIR": "/Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410", 
    "OBJC_DISABLE_INITIALIZE_FORK_SAFETY": "YES"
   }, 
   "default-executor": "jmeter"
  }, 
  "reporting": [
-  "final-stats", 
-  "console"
+  {
+   "module": "final-stats"
+  }, 
+  {
+   "module": "console"
+  }
  ], 
  "modules": {
   "appium": {
@@ -203,6 +208,9 @@
     "summariser.name": "", 
     "jmeterengine.force.system.exit": "true"
    }, 
+   "system-properties": {
+    "sun.net.inetaddr.ttl": 0
+   }, 
    "version": 5, 
    "download-link": "https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip", 
    "plugins": [
@@ -219,7 +227,7 @@
     "jmeter-ftp", 
     "jpgc-casutg"
    ], 
-   "path": "benchmark/jmeter/apache-jmeter-5.0/bin/jmeter", 
+   "path": "/Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter", 
    "class": "bzt.modules.jmeter.JMeterExecutor", 
    "protocol-handlers": {
     "http": "bzt.jmx.http.HTTPProtocolHandler"
@@ -250,6 +258,15 @@
    "class": "bzt.modules.molotov.MolotovExecutor"
   }, 
   "consolidator": {
+   "percentiles": [
+    0, 
+    50, 
+    90, 
+    95, 
+    99, 
+    99.9, 
+    100
+   ], 
    "class": "bzt.modules.aggregator.ConsolidatingAggregator"
   }, 
   "unpacker": {
@@ -264,8 +281,12 @@
   "simple": {
    "think-time": 0.75, 
    "requests": [
-    "http://blazedemo.com/", 
-    "http://blazedemo.com/vacation.html"
+    {
+     "url": "http://blazedemo.com/"
+    }, 
+    {
+     "url": "http://blazedemo.com/vacation.html"
+    }
    ]
   }
  }, 
@@ -294,8 +315,13 @@
  "execution": [
   {
    "ramp-up": "1m", 
+   "throughput": {
+    "local": null
+   }, 
    "hold-for": "1m", 
-   "concurrency": 1, 
+   "concurrency": {
+    "local": 1
+   }, 
    "scenario": "simple"
   }
  ]

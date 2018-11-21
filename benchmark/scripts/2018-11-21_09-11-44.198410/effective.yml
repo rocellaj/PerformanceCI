@@ -52,10 +52,13 @@ cli-aliases:
       local:
         sequential: true
 execution:
-- concurrency: 1
+- concurrency:
+    local: 1
   hold-for: 1m
   ramp-up: 1m
   scenario: simple
+  throughput:
+    local: null
 included-configs: []
 modules:
   ab:
@@ -77,6 +80,14 @@ modules:
     class: bzt.modules.console.ConsoleStatusReporter
   consolidator:
     class: bzt.modules.aggregator.ConsolidatingAggregator
+    percentiles:
+    - 0.0
+    - 50.0
+    - 90.0
+    - 95.0
+    - 99.0
+    - 99.9
+    - 100.0
   external-results-loader:
     class: bzt.modules.external.ExternalResultsLoader
   final-stats:
@@ -100,7 +111,7 @@ modules:
     detect-plugins: true
     download-link: https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip
     force-ctg: true
-    path: benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
+    path: /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
     plugins:
     - jpgc-casutg
     - jpgc-dummy
@@ -121,6 +132,8 @@ modules:
       summariser.name: ''
     protocol-handlers:
       http: bzt.jmx.http.HTTPProtocolHandler
+    system-properties:
+      sun.net.inetaddr.ttl: 0
     version: 5.0
   junit:
     class: bzt.modules.java.JUnitTester
@@ -174,13 +187,13 @@ modules:
     class: bzt.modules.javascript.WebdriverIOExecutor
 provisioning: local
 reporting:
-- final-stats
-- console
+- module: final-stats
+- module: console
 scenarios:
   simple:
     requests:
-    - http://blazedemo.com/
-    - http://blazedemo.com/vacation.html
+    - url: http://blazedemo.com/
+    - url: http://blazedemo.com/vacation.html
     think-time: 0.75
 services:
 - local:
@@ -200,5 +213,6 @@ settings:
   default-executor: jmeter
   env:
     OBJC_DISABLE_INITIALIZE_FORK_SAFETY: 'YES'
+    TAURUS_ARTIFACTS_DIR: /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/2018-11-21_09-11-44.198410
 version: 1.13.0
 
