@@ -37,7 +37,6 @@ jobs:
 
   taurus_test: 
     docker: 
-      # - image: circleci/openjdk:8
       - image: circleci/python:2.7-browsers
 
     working_directory: ~/devTings
@@ -50,7 +49,8 @@ jobs:
       - run: 'java -version' 
       - run: 'cd benchmark/scripts/'
       - run: 'ls -al'
-      - run: 'bzt poc_jmeter_2.yml'
+      - run: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
+      # - run: 'bzt benchmark/scripts/poc_jmeter_2.yml'
       # - run: 'benchmark'
 
 workflows: 
