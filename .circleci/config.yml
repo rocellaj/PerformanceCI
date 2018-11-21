@@ -48,7 +48,7 @@ jobs:
       - run: 'sudo pip install bzt'
       - run: 'ls -al'
       - run: 'java -version' 
-      - run: 'cd /benchmark/scripts'
+      - run: 'cd benchmark/scripts'
       - run: 'bzt poc_jmeter_2.yml'
       # - run: 'benchmark'
 
