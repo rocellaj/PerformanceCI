@@ -51,7 +51,7 @@ jobs:
       # - run: 'cd benchmark/scripts/'
       # - run: 'docker'
       # - run: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
-      - run: 'bzt'
+      - run: 'bzt benchmark/scripts/poc_jmeter_2.yml'
       # - run: 'benchmark'
 
 workflows: 
