@@ -13,7 +13,7 @@ execution:
 
 modules:
   jmeter:
-    path: benchmark/jmeter/bin/jmeter
+    path: benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
     #download-link: https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-{version}.zip
     version: 3.0  # minimal supported version of JMeter is 2.9
     force-ctg: true   # true by default
