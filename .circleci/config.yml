@@ -48,7 +48,7 @@ jobs:
       - run: 'java -version' 
       # - run: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx' < this is for jmeter
       #- run: 'bzt benchmark/scripts/poc_jmeter_2.yml -o modules.console.disable=true' < this is working
-      # - run: 'benchmark'
+      - run: 'bzt benchmark/scripts/poc_jmeter_2.yml'
 
 workflows: 
   version: 2 
