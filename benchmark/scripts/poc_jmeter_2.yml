@@ -25,8 +25,8 @@ modules:
 #     # - jmeter-ftp
 #     # - jpgc-casutg
   console: 
-    disable: false 
-    #screen: dummy 
+    disable: true 
+    # screen: dummy 
 
 
 settings: 
