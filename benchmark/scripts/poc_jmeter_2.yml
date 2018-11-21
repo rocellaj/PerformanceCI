@@ -18,12 +18,13 @@ modules:
     path: benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
     download-link: https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip
     version: 5.0  # minimal supported version of JMeter is 2.9
-#     # force-ctg: true   # true by default
-#     # detect-plugins: true
-#     # plugins:no
-#     # - jpgc-json=2.2
-#     # - jmeter-ftp
-#     # - jpgc-casutg
+    force-ctg: true   # true by default
+    detect-plugins: true
+#     plugins: yes
+# #     # - jpgc-json=2.2
+# #     # - jmeter-ftp
+# #     # - jpgc-casutg
+#       - JUnit plugin 
   console: 
     disable: true 
     # screen: dummy 
@@ -34,7 +35,7 @@ settings:
     
 reporting:
 - module: junit-xml
-  summary: true  # overall samples count and percent of failures
+  summary: false  # overall samples count and percent of failures
   percentiles: false  # display average times and percentiles
   summary-labels: false # provides list of sample labels, status, percentage of completed, avg time and errors
   failed-labels: false  # provides list of sample labels with failures
