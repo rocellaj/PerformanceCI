@@ -4,11 +4,13 @@ execution:
   hold-for: 1m
   scenario: simple
 
+#part of poc
 # scenarios:
 #   simple:
 #     think-time: 0.75
 #     requests:
 #     - http://blazedemo.com/
+
 scenarios:
   simple:
     script: benchmark/scripts/poc_jmeter_2.jmx
@@ -17,34 +19,24 @@ modules:
   jmeter:
     path: benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
     download-link: https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip
-    version: 5.0  # minimal supported version of JMeter is 2.9
-    force-ctg: true   # true by default
-    detect-plugins: true
-#     plugins: yes
-# #     # - jpgc-json=2.2
-# #     # - jmeter-ftp
-# #     # - jpgc-casutg
-#       - JUnit plugin 
+    version: 5.0 
+    force-ctg: true 
+    detect-plugins: false
+
   console: 
     disable: true 
-    # screen: dummy 
-
 
 settings: 
   artifacts-dir: benchmark/tmp
     
 reporting:
 - module: final_stats
-  summary: true  # overall samples count and percent of failures
-  percentiles: false  # display average times and percentiles
-  summary-labels: false # provides list of sample labels, status, percentage of completed, avg time and errors
-  failed-labels: false  # provides list of sample labels with failures
-  test-duration: true  # provides test duration
+  summary: true 
+  percentiles: false  
+  summary-labels: false 
+  failed-labels: false  
+  test-duration: true 
+
 - module: passfail
   criteria:
-    - avg-rt of health_check >0.1ms for 1s, stop as failed
-
-# modules:
-#   console:
-#     # disable console reporter
-#     disable: false  # default: auto
+    - avg-rt of health_check >300ms, stop as failed

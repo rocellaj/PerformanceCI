@@ -41,10 +41,10 @@ jobs:
     steps: 
       - checkout
       - run: 
-          name: 'install taurus'
+          name: 'Install taurus'
           command: 'sudo pip install bzt'
       - run: 
-          name: 'initiate benchmark test'
+          name: 'Initiate benchmark test'
           command: 'bzt benchmark/scripts/poc_jmeter_2.yml'
 
       #- run: 'bzt benchmark/scripts/poc_jmeter_2.yml -o modules.console.disable=true' < this is working

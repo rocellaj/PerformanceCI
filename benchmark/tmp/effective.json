@@ -113,10 +113,10 @@
    "module": "passfail", 
    "criteria": [
     {
-     "timeframe": "1s", 
+     "timeframe": 0, 
      "stop": true, 
      "label": "health_check ", 
-     "threshold": "0.1ms", 
+     "threshold": "300ms", 
      "logic": "for", 
      "fail": true, 
      "message": null, 
@@ -227,7 +227,7 @@
   }, 
   "jmeter": {
    "force-ctg": true, 
-   "detect-plugins": true, 
+   "detect-plugins": false, 
    "properties": {
     "jmeter.save.saveservice.autoflush": "true", 
     "jmeter.save.saveservice.connect_time": "true", 

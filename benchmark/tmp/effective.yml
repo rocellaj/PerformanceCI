@@ -108,7 +108,7 @@ modules:
     class: bzt.modules.services.InstallChecker
   jmeter:
     class: bzt.modules.jmeter.JMeterExecutor
-    detect-plugins: true
+    detect-plugins: false
     download-link: https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip
     force-ctg: true
     path: /Users/rocellajimenez/Desktop/poc_v2/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
@@ -198,8 +198,8 @@ reporting:
     message: null
     stop: true
     subject: avg-rt
-    threshold: 0.1ms
-    timeframe: 1s
+    threshold: 300ms
+    timeframe: 0
   module: passfail
 scenarios:
   simple:
