@@ -4,11 +4,14 @@ execution:
   hold-for: 1m
   scenario: simple
 
+# scenarios:
+#   simple:
+#     think-time: 0.75
+#     requests:
+#     - http://blazedemo.com/
 scenarios:
-  simple:
-    think-time: 0.75
-    requests:
-    - http://blazedemo.com/
+  with_script:
+    script: benchmark/scripts/poc_jmeter_2.jmx
 
 modules:
   jmeter:
