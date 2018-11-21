@@ -50,7 +50,7 @@ jobs:
       - run: 'java -version' 
       - run: 'cd benchmark/scripts/'
       - run: 'ls -al'
-      - run: 'bzt poc_jmeter_2.yml'
+      - run: 'bzt benchmark/scripts/poc_jmeter_2.yml'
       # - run: 'benchmark'
 
 workflows: 
