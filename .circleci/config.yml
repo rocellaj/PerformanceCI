@@ -43,15 +43,11 @@ jobs:
 
     steps: 
       - checkout
-      # - run: 'sudo service docker start'
-      # - run: 'sudo docker pull blazemeter/taurus'
       - run: 'sudo pip install bzt'
       - run: 'ls -al'
       - run: 'java -version' 
-      # - run: 'cd benchmark/scripts/'
-      # - run: 'docker'
-      # - run: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
-      - run: 'bzt benchmark/scripts/poc_jmeter_2.yml -o modules.console.disable=true'
+      # - run: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx' < this is for jmeter
+      #- run: 'bzt benchmark/scripts/poc_jmeter_2.yml -o modules.console.disable=true' < this is working
       # - run: 'benchmark'
 
 workflows: 

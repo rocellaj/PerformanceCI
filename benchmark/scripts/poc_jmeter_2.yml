@@ -24,6 +24,10 @@ modules:
 #     # - jpgc-json=2.2
 #     # - jmeter-ftp
 #     # - jpgc-casutg
+  console: 
+    disable: false 
+    screen: dummy 
+    
 
 settings: 
   artifacts-dir: benchmark/tmp
