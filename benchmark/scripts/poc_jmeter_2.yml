@@ -33,7 +33,7 @@ settings:
   artifacts-dir: benchmark/tmp
     
 reporting:
-- module: final-stats
+- module: junit-xml
   summary: true  # overall samples count and percent of failures
   percentiles: false  # display average times and percentiles
   summary-labels: false # provides list of sample labels, status, percentage of completed, avg time and errors
