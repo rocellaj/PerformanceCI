@@ -15,9 +15,9 @@ scenarios:
 
 modules:
   jmeter:
-    path: benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
-    # download-link: https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip
-    version: 5.0  # minimal supported version of JMeter is 2.9
+    path: benchmark/jmeter/apache-jmeter-4.0/bin/jmeter
+    download-link: https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-4.0.zip
+    version: 4.0  # minimal supported version of JMeter is 2.9
     # force-ctg: true   # true by default
     # detect-plugins: true
     # plugins:

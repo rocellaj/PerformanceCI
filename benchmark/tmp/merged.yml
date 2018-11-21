@@ -1,0 +1,18 @@
+---
+execution:
+- concurrency: 1
+  hold-for: 1m
+  ramp-up: 1m
+  scenario: simple
+modules:
+  jmeter:
+    path: benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
+    version: 5.0
+scenarios:
+  simple:
+    requests:
+    - http://blazedemo.com/
+    think-time: 0.75
+settings:
+  artifacts-dir: benchmark/tmp
+
