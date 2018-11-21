@@ -100,6 +100,30 @@
   }, 
   {
    "module": "console"
+  }, 
+  {
+   "summary-labels": false, 
+   "module": "final_stats", 
+   "summary": true, 
+   "test-duration": true, 
+   "percentiles": false, 
+   "failed-labels": false
+  }, 
+  {
+   "module": "passfail", 
+   "criteria": [
+    {
+     "timeframe": "1s", 
+     "stop": true, 
+     "label": "health_check ", 
+     "threshold": "0.1ms", 
+     "logic": "for", 
+     "fail": true, 
+     "message": null, 
+     "condition": ">", 
+     "subject": "avg-rt"
+    }
+   ]
   }
  ], 
  "modules": {
@@ -189,6 +213,7 @@
    "class": "bzt.modules.pbench.PBenchExecutor"
   }, 
   "console": {
+   "disable": true, 
    "class": "bzt.modules.console.ConsoleStatusReporter"
   }, 
   "android-emulator": {
@@ -201,14 +226,13 @@
    "class": "bzt.modules.functional.FunctionalAggregator"
   }, 
   "jmeter": {
+   "force-ctg": true, 
+   "detect-plugins": true, 
    "properties": {
     "jmeter.save.saveservice.autoflush": "true", 
     "jmeter.save.saveservice.connect_time": "true", 
     "summariser.name": "", 
     "jmeterengine.force.system.exit": "true"
-   }, 
-   "system-properties": {
-    "sun.net.inetaddr.ttl": 0
    }, 
    "version": 5, 
    "download-link": "https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip", 
@@ -275,12 +299,7 @@
  "provisioning": "local", 
  "scenarios": {
   "simple": {
-   "think-time": 0.75, 
-   "requests": [
-    {
-     "url": "http://blazedemo.com/"
-    }
-   ]
+   "script": "/Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/poc_jmeter_2.jmx"
   }
  }, 
  "version": "1.13.0", 
@@ -307,15 +326,14 @@
  ], 
  "execution": [
   {
-   "ramp-up": "1m", 
+   "scenario": "simple", 
    "throughput": {
     "local": null
    }, 
    "hold-for": "1m", 
    "concurrency": {
     "local": 1
-   }, 
-   "scenario": "simple"
+   }
   }
  ]
 }
