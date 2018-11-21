@@ -28,12 +28,9 @@ jobs:
 
   #   steps: 
   #     - checkout
-  #     - run: 'ls -al'
-  #     # - run: "sudo service docker start"
-  #     - run: pip install bzt
-  #     #- run: 'sudo docker run -it --rm -v benchmark/tmp:/bzt-configs blazemeter/taurus benchmark/scripts/poc_jmeter_2.yml'
-  #     # - run: 
-  #     #     command: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
+  #     - run: 
+  #         name: initiate benchmark test
+  #         command: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
 
   taurus_test: 
     docker: 
@@ -43,12 +40,14 @@ jobs:
 
     steps: 
       - checkout
-      - run: 'sudo pip install bzt'
-      - run: 'ls -al'
-      - run: 'java -version' 
-      # - run: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx' < this is for jmeter
+      - run: 
+          name: 'install taurus'
+          command: 'sudo pip install bzt'
+      - run: 
+          name: 'initiate benchmark test'
+          command: 'bzt benchmark/scripts/poc_jmeter_2.yml'
+
       #- run: 'bzt benchmark/scripts/poc_jmeter_2.yml -o modules.console.disable=true' < this is working
-      - run: 'bzt benchmark/scripts/poc_jmeter_2.yml'
 
 workflows: 
   version: 2 
@@ -62,21 +61,3 @@ workflows:
               only: master 
           requires: 
             - build
-
-      # - run: 
-      #   name: 'sudo apt-get update'
-      # - run: 'java -version'
-      # - run: 'sudo add-apt-repository ppa:openjdk-r/ppa'
-      # - run: sudo apt-get update 
-      # - run: sudo apt-get install openjdk-8-jdk
-      # - run: 'java -version'
-      # - run: 'sudo apt-get install openjdk-7-jre-headless'
-      # - run: 'wget -c http://ftp.ps.pl/pub/apache//jmeter/binaries/apache-jmeter-5.0.tgz'
-      # - run: 'ls -al'
-      # - run: 'tar xzf apache-jmeter-5.0.tgz'
-      # - run: 'ls -al'
-      # - run: 
-      #     name: 
-      #     command: 'cd apache-jmeter-5.0'
-      # - run: 'apache-jmeter-5.0/bin/./jmeter'
-      #  - run: 'ls -al'
