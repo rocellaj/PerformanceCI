@@ -38,14 +38,14 @@ jobs:
   taurus_test: 
     docker: 
       # - image: circleci/openjdk:8
-      - image: circleci/python:2.7
+      - image: circleci/python:2.7-browsers
 
     working_directory: ~/devTings
 
     steps: 
       - checkout
-      - run: 'docker pull blazemeter/taurus'
-      # - run: 'sudo pip install bzt'
+      # - run: 'docker pull blazemeter/taurus'
+      - run: 'sudo pip install bzt'
       # - run: 'ls -al'
       # - run: 'java -version'
       # - run: 'bzt benchmark/scripts/poc_jmeter_2.yml'
