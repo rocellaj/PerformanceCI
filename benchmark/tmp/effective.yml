@@ -108,6 +108,7 @@ modules:
     class: bzt.modules.services.InstallChecker
   jmeter:
     class: bzt.modules.jmeter.JMeterExecutor
+    download-link: https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip
     path: /Users/rocellajimenez/Desktop/poc_v2/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
     plugins:
     - jpgc-casutg

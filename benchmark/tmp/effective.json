@@ -201,11 +201,17 @@
    "class": "bzt.modules.functional.FunctionalAggregator"
   }, 
   "jmeter": {
-   "class": "bzt.modules.jmeter.JMeterExecutor", 
+   "properties": {
+    "jmeter.save.saveservice.autoflush": "true", 
+    "jmeter.save.saveservice.connect_time": "true", 
+    "summariser.name": "", 
+    "jmeterengine.force.system.exit": "true"
+   }, 
    "system-properties": {
     "sun.net.inetaddr.ttl": 0
    }, 
    "version": 5, 
+   "download-link": "https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip", 
    "plugins": [
     "jpgc-casutg", 
     "jpgc-dummy", 
@@ -218,12 +224,7 @@
     "jpgc-tst"
    ], 
    "path": "/Users/rocellajimenez/Desktop/poc_v2/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter", 
-   "properties": {
-    "jmeter.save.saveservice.autoflush": "true", 
-    "jmeter.save.saveservice.connect_time": "true", 
-    "summariser.name": "", 
-    "jmeterengine.force.system.exit": "true"
-   }, 
+   "class": "bzt.modules.jmeter.JMeterExecutor", 
    "protocol-handlers": {
     "http": "bzt.jmx.http.HTTPProtocolHandler"
    }
