@@ -40,12 +40,16 @@ jobs:
 
     steps: 
       - checkout
+      # - run: 
+      #     name: 'Install taurus'
+      #     command: 'sudo pip install bzt'
+      # - run: 
+      #     name: 'Initiate benchmark test'
+      #     command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
       - run: 
-          name: 'Install taurus'
-          command: 'sudo pip install bzt'
-      - run: 
-          name: 'Initiate benchmark test'
-          command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
+          name: 'Summary'
+          command: 'echo $LANG'
+      - run: 'LANG=en_US.utf8'
       - run: 
           name: 'Summary'
           command: 'echo $LANG'
