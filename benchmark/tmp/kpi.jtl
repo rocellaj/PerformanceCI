@@ -1,105 +1,152 @@
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,Hostname,Connect
-1542822613754,10784,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,1368,Rocellas-MacBook-Pro.local,86
-1542822625453,365,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,313,Rocellas-MacBook-Pro.local,5
-1542822626570,415,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,341,Rocellas-MacBook-Pro.local,4
-1542822627740,329,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,278,Rocellas-MacBook-Pro.local,6
-1542822628823,284,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,233,Rocellas-MacBook-Pro.local,6
-1542822629859,282,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,227,Rocellas-MacBook-Pro.local,5
-1542822630897,292,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,226,Rocellas-MacBook-Pro.local,3
-1542822631943,284,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,231,Rocellas-MacBook-Pro.local,6
-1542822632983,287,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,231,Rocellas-MacBook-Pro.local,11
-1542822634028,281,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,219,Rocellas-MacBook-Pro.local,3
-1542822635065,288,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,239,Rocellas-MacBook-Pro.local,4
-1542822636108,275,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,221,Rocellas-MacBook-Pro.local,3
-1542822637136,273,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,226,Rocellas-MacBook-Pro.local,5
-1542822638165,261,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,221,Rocellas-MacBook-Pro.local,4
-1542822639181,271,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,224,Rocellas-MacBook-Pro.local,4
-1542822640206,291,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,234,Rocellas-MacBook-Pro.local,6
-1542822641260,274,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,223,Rocellas-MacBook-Pro.local,4
-1542822642290,292,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,230,Rocellas-MacBook-Pro.local,7
-1542822643336,315,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,263,Rocellas-MacBook-Pro.local,6
-1542822644404,357,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,306,Rocellas-MacBook-Pro.local,5
-1542822645514,282,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,228,Rocellas-MacBook-Pro.local,4
-1542822646555,286,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,232,Rocellas-MacBook-Pro.local,5
-1542822647597,280,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,225,Rocellas-MacBook-Pro.local,4
-1542822648631,276,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,226,Rocellas-MacBook-Pro.local,4
-1542822649663,278,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,228,Rocellas-MacBook-Pro.local,5
-1542822650695,353,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,284,Rocellas-MacBook-Pro.local,3
-1542822651800,346,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,284,Rocellas-MacBook-Pro.local,4
-1542822652899,296,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,226,Rocellas-MacBook-Pro.local,6
-1542822653947,279,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,227,Rocellas-MacBook-Pro.local,6
-1542822654979,293,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,230,Rocellas-MacBook-Pro.local,5
-1542822656025,286,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,227,Rocellas-MacBook-Pro.local,5
-1542822657065,305,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,241,Rocellas-MacBook-Pro.local,5
-1542822658122,276,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,225,Rocellas-MacBook-Pro.local,3
-1542822659153,269,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,220,Rocellas-MacBook-Pro.local,4
-1542822660174,295,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,237,Rocellas-MacBook-Pro.local,5
-1542822661221,286,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,231,Rocellas-MacBook-Pro.local,6
-1542822662260,281,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,220,Rocellas-MacBook-Pro.local,5
-1542822663297,303,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,238,Rocellas-MacBook-Pro.local,4
-1542822664353,296,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,236,Rocellas-MacBook-Pro.local,4
-1542822665400,364,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,303,Rocellas-MacBook-Pro.local,5
-1542822666517,367,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,311,Rocellas-MacBook-Pro.local,5
-1542822667640,367,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,315,Rocellas-MacBook-Pro.local,13
-1542822668760,376,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,322,Rocellas-MacBook-Pro.local,5
-1542822669887,319,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,230,Rocellas-MacBook-Pro.local,7
-1542822670966,285,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,230,Rocellas-MacBook-Pro.local,7
-1542822672006,302,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,228,Rocellas-MacBook-Pro.local,8
-1542822673064,434,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,379,Rocellas-MacBook-Pro.local,4
-1542822674252,441,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,359,Rocellas-MacBook-Pro.local,3
-1542822675447,354,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,290,Rocellas-MacBook-Pro.local,5
-1542822676553,373,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,311,Rocellas-MacBook-Pro.local,5
-1542822677680,282,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,224,Rocellas-MacBook-Pro.local,6
-1542822678715,354,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,302,Rocellas-MacBook-Pro.local,5
-1542822679824,379,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,317,Rocellas-MacBook-Pro.local,6
-1542822680955,273,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,220,Rocellas-MacBook-Pro.local,4
-1542822681981,310,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,233,Rocellas-MacBook-Pro.local,10
-1542822683046,322,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,270,Rocellas-MacBook-Pro.local,6
-1542822684119,296,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,232,Rocellas-MacBook-Pro.local,9
-1542822685169,291,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,226,Rocellas-MacBook-Pro.local,8
-1542822686213,290,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,225,Rocellas-MacBook-Pro.local,5
-1542822687260,286,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,226,Rocellas-MacBook-Pro.local,4
-1542822688298,280,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,221,Rocellas-MacBook-Pro.local,4
-1542822689333,296,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,222,Rocellas-MacBook-Pro.local,5
-1542822690381,282,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,218,Rocellas-MacBook-Pro.local,3
-1542822691415,291,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,218,Rocellas-MacBook-Pro.local,2
-1542822692458,350,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,291,Rocellas-MacBook-Pro.local,5
-1542822693561,366,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,303,Rocellas-MacBook-Pro.local,3
-1542822694679,362,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,310,Rocellas-MacBook-Pro.local,3
-1542822695796,287,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,223,Rocellas-MacBook-Pro.local,5
-1542822696836,282,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,224,Rocellas-MacBook-Pro.local,7
-1542822697870,290,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,228,Rocellas-MacBook-Pro.local,5
-1542822698912,288,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,223,Rocellas-MacBook-Pro.local,5
-1542822699951,293,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,226,Rocellas-MacBook-Pro.local,3
-1542822701007,298,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,228,Rocellas-MacBook-Pro.local,7
-1542822702061,357,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,301,Rocellas-MacBook-Pro.local,6
-1542822703174,285,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,221,Rocellas-MacBook-Pro.local,5
-1542822704210,272,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,223,Rocellas-MacBook-Pro.local,5
-1542822705236,273,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,226,Rocellas-MacBook-Pro.local,4
-1542822706262,272,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,224,Rocellas-MacBook-Pro.local,4
-1542822707419,292,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,227,Rocellas-MacBook-Pro.local,5
-1542822708467,320,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,246,Rocellas-MacBook-Pro.local,3
-1542822709544,275,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,225,Rocellas-MacBook-Pro.local,4
-1542822710576,350,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,287,Rocellas-MacBook-Pro.local,3
-1542822711678,289,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,228,Rocellas-MacBook-Pro.local,6
-1542822712719,294,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,230,Rocellas-MacBook-Pro.local,4
-1542822713765,269,http://blazedemo.com/,200,OK,simple 1-1,true,292216,1,1,220,Rocellas-MacBook-Pro.local,2
-1542822714786,283,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,231,Rocellas-MacBook-Pro.local,4
-1542822715822,327,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,264,Rocellas-MacBook-Pro.local,6
-1542822716901,296,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,230,Rocellas-MacBook-Pro.local,7
-1542822717953,286,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,228,Rocellas-MacBook-Pro.local,7
-1542822718996,284,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,229,Rocellas-MacBook-Pro.local,10
-1542822720031,306,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,228,Rocellas-MacBook-Pro.local,5
-1542822721090,343,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,289,Rocellas-MacBook-Pro.local,5
-1542822722186,278,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,223,Rocellas-MacBook-Pro.local,5
-1542822723216,284,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,222,Rocellas-MacBook-Pro.local,5
-1542822724253,278,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,223,Rocellas-MacBook-Pro.local,3
-1542822725286,282,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,221,Rocellas-MacBook-Pro.local,4
-1542822726320,294,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,228,Rocellas-MacBook-Pro.local,5
-1542822727365,280,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,223,Rocellas-MacBook-Pro.local,6
-1542822728397,267,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,221,Rocellas-MacBook-Pro.local,6
-1542822729418,350,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,290,Rocellas-MacBook-Pro.local,5
-1542822730519,281,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,222,Rocellas-MacBook-Pro.local,4
-1542822731553,289,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,223,Rocellas-MacBook-Pro.local,5
-1542822732596,292,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,228,Rocellas-MacBook-Pro.local,4
-1542822732930,348,http://blazedemo.com/,200,OK,simple 1-1,true,292194,1,1,227,Rocellas-MacBook-Pro.local,7
+1542899528538,337,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,335,Rocellas-MacBook-Pro.local,107
+1542899528881,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,225,Rocellas-MacBook-Pro.local,5
+1542899529107,220,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,220,Rocellas-MacBook-Pro.local,3
+1542899529328,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,3
+1542899529553,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,225,Rocellas-MacBook-Pro.local,3
+1542899529779,223,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,223,Rocellas-MacBook-Pro.local,3
+1542899530003,219,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,219,Rocellas-MacBook-Pro.local,4
+1542899530222,217,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,217,Rocellas-MacBook-Pro.local,3
+1542899530439,220,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,220,Rocellas-MacBook-Pro.local,2
+1542899530660,222,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,222,Rocellas-MacBook-Pro.local,2
+1542899530883,235,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,232,Rocellas-MacBook-Pro.local,2
+1542899531119,219,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,218,Rocellas-MacBook-Pro.local,3
+1542899531338,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,225,Rocellas-MacBook-Pro.local,3
+1542899531564,220,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,219,Rocellas-MacBook-Pro.local,3
+1542899531784,223,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,223,Rocellas-MacBook-Pro.local,2
+1542899532008,237,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,237,Rocellas-MacBook-Pro.local,3
+1542899532246,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,2
+1542899532471,283,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,283,Rocellas-MacBook-Pro.local,5
+1542899532754,227,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,227,Rocellas-MacBook-Pro.local,7
+1542899532981,232,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,232,Rocellas-MacBook-Pro.local,4
+1542899533214,221,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,221,Rocellas-MacBook-Pro.local,2
+1542899533435,226,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,226,Rocellas-MacBook-Pro.local,5
+1542899533662,222,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,222,Rocellas-MacBook-Pro.local,2
+1542899533885,300,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,299,Rocellas-MacBook-Pro.local,2
+1542899534186,232,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,232,Rocellas-MacBook-Pro.local,6
+1542899534419,228,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,227,Rocellas-MacBook-Pro.local,4
+1542899534647,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,225,Rocellas-MacBook-Pro.local,5
+1542899534872,235,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,234,Rocellas-MacBook-Pro.local,3
+1542899535107,222,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,222,Rocellas-MacBook-Pro.local,3
+1542899535330,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,3
+1542899535554,279,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,269,Rocellas-MacBook-Pro.local,3
+1542899535834,305,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,305,Rocellas-MacBook-Pro.local,3
+1542899536139,228,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,228,Rocellas-MacBook-Pro.local,4
+1542899536368,238,health_check ,200,OK,Thread Group 1-1,true,8633,1,1,238,Rocellas-MacBook-Pro.local,4
+1542899536607,218,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,218,Rocellas-MacBook-Pro.local,2
+1542899536826,227,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,227,Rocellas-MacBook-Pro.local,4
+1542899537054,272,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,271,Rocellas-MacBook-Pro.local,3
+1542899537326,239,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,239,Rocellas-MacBook-Pro.local,3
+1542899537566,306,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,306,Rocellas-MacBook-Pro.local,5
+1542899537872,308,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,308,Rocellas-MacBook-Pro.local,3
+1542899538181,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,3
+1542899538405,285,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,285,Rocellas-MacBook-Pro.local,6
+1542899538691,228,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,227,Rocellas-MacBook-Pro.local,3
+1542899538920,283,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,283,Rocellas-MacBook-Pro.local,2
+1542899539204,220,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,219,Rocellas-MacBook-Pro.local,3
+1542899539436,227,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,227,Rocellas-MacBook-Pro.local,5
+1542899539664,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,225,Rocellas-MacBook-Pro.local,5
+1542899539889,236,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,236,Rocellas-MacBook-Pro.local,4
+1542899540125,221,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,221,Rocellas-MacBook-Pro.local,3
+1542899540346,294,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,294,Rocellas-MacBook-Pro.local,6
+1542899540641,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,225,Rocellas-MacBook-Pro.local,3
+1542899540867,282,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,281,Rocellas-MacBook-Pro.local,3
+1542899541149,229,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,229,Rocellas-MacBook-Pro.local,6
+1542899541378,288,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,288,Rocellas-MacBook-Pro.local,5
+1542899541667,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,2
+1542899541892,282,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,282,Rocellas-MacBook-Pro.local,4
+1542899542174,221,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,220,Rocellas-MacBook-Pro.local,2
+1542899542395,289,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,289,Rocellas-MacBook-Pro.local,5
+1542899542685,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,221,Rocellas-MacBook-Pro.local,3
+1542899542910,234,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,232,Rocellas-MacBook-Pro.local,5
+1542899543144,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,221,Rocellas-MacBook-Pro.local,3
+1542899543369,239,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,237,Rocellas-MacBook-Pro.local,1
+1542899543608,305,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,305,Rocellas-MacBook-Pro.local,3
+1542899543914,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,225,Rocellas-MacBook-Pro.local,4
+1542899544140,219,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,218,Rocellas-MacBook-Pro.local,2
+1542899544359,273,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,273,Rocellas-MacBook-Pro.local,2
+1542899544632,222,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,222,Rocellas-MacBook-Pro.local,5
+1542899544855,222,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,221,Rocellas-MacBook-Pro.local,3
+1542899545077,230,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,229,Rocellas-MacBook-Pro.local,4
+1542899545308,227,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,227,Rocellas-MacBook-Pro.local,5
+1542899545535,329,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,328,Rocellas-MacBook-Pro.local,5
+1542899545864,228,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,227,Rocellas-MacBook-Pro.local,5
+1542899546092,221,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,221,Rocellas-MacBook-Pro.local,4
+1542899546314,223,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,223,Rocellas-MacBook-Pro.local,3
+1542899546537,259,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,257,Rocellas-MacBook-Pro.local,4
+1542899546796,220,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,220,Rocellas-MacBook-Pro.local,2
+1542899547017,223,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,222,Rocellas-MacBook-Pro.local,3
+1542899547240,221,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,221,Rocellas-MacBook-Pro.local,4
+1542899547462,221,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,220,Rocellas-MacBook-Pro.local,2
+1542899547684,218,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,218,Rocellas-MacBook-Pro.local,2
+1542899547903,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,3
+1542899548127,226,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,226,Rocellas-MacBook-Pro.local,6
+1542899548354,242,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,242,Rocellas-MacBook-Pro.local,6
+1542899548597,237,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,237,Rocellas-MacBook-Pro.local,9
+1542899548835,230,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,230,Rocellas-MacBook-Pro.local,4
+1542899549066,229,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,228,Rocellas-MacBook-Pro.local,4
+1542899549304,227,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,227,Rocellas-MacBook-Pro.local,9
+1542899549531,221,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,221,Rocellas-MacBook-Pro.local,3
+1542899549753,222,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,222,Rocellas-MacBook-Pro.local,2
+1542899549975,294,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,294,Rocellas-MacBook-Pro.local,3
+1542899550270,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,225,Rocellas-MacBook-Pro.local,6
+1542899550496,227,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,226,Rocellas-MacBook-Pro.local,4
+1542899550724,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,225,Rocellas-MacBook-Pro.local,3
+1542899550950,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,225,Rocellas-MacBook-Pro.local,3
+1542899551176,223,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,223,Rocellas-MacBook-Pro.local,3
+1542899551399,226,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,226,Rocellas-MacBook-Pro.local,6
+1542899551626,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,4
+1542899551851,256,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,253,Rocellas-MacBook-Pro.local,4
+1542899552108,245,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,244,Rocellas-MacBook-Pro.local,4
+1542899552353,264,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,264,Rocellas-MacBook-Pro.local,3
+1542899552617,223,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,223,Rocellas-MacBook-Pro.local,3
+1542899552841,222,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,222,Rocellas-MacBook-Pro.local,4
+1542899553063,272,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,272,Rocellas-MacBook-Pro.local,3
+1542899553336,305,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,305,Rocellas-MacBook-Pro.local,3
+1542899553641,222,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,222,Rocellas-MacBook-Pro.local,4
+1542899553863,223,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,223,Rocellas-MacBook-Pro.local,3
+1542899554087,254,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,254,Rocellas-MacBook-Pro.local,3
+1542899554341,330,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,330,Rocellas-MacBook-Pro.local,4
+1542899554671,219,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,219,Rocellas-MacBook-Pro.local,3
+1542899554890,226,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,226,Rocellas-MacBook-Pro.local,3
+1542899555117,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,3
+1542899555347,222,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,222,Rocellas-MacBook-Pro.local,3
+1542899555570,341,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,341,Rocellas-MacBook-Pro.local,2
+1542899555911,222,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,222,Rocellas-MacBook-Pro.local,2
+1542899556134,222,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,222,Rocellas-MacBook-Pro.local,4
+1542899556357,254,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,254,Rocellas-MacBook-Pro.local,4
+1542899556612,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,2
+1542899556836,227,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,226,Rocellas-MacBook-Pro.local,5
+1542899557063,266,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,266,Rocellas-MacBook-Pro.local,3
+1542899557330,221,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,221,Rocellas-MacBook-Pro.local,3
+1542899557552,288,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,288,Rocellas-MacBook-Pro.local,2
+1542899557840,227,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,226,Rocellas-MacBook-Pro.local,7
+1542899558067,278,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,278,Rocellas-MacBook-Pro.local,3
+1542899558346,312,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,312,Rocellas-MacBook-Pro.local,2
+1542899558658,226,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,225,Rocellas-MacBook-Pro.local,4
+1542899558884,287,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,287,Rocellas-MacBook-Pro.local,3
+1542899559172,220,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,219,Rocellas-MacBook-Pro.local,2
+1542899559392,301,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,300,Rocellas-MacBook-Pro.local,6
+1542899559693,228,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,228,Rocellas-MacBook-Pro.local,4
+1542899559921,278,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,276,Rocellas-MacBook-Pro.local,4
+1542899560200,223,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,223,Rocellas-MacBook-Pro.local,2
+1542899560424,282,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,282,Rocellas-MacBook-Pro.local,4
+1542899560707,220,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,220,Rocellas-MacBook-Pro.local,3
+1542899560927,295,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,292,Rocellas-MacBook-Pro.local,5
+1542899561222,221,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,221,Rocellas-MacBook-Pro.local,2
+1542899561444,292,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,291,Rocellas-MacBook-Pro.local,2
+1542899561737,236,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,236,Rocellas-MacBook-Pro.local,7
+1542899561973,270,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,269,Rocellas-MacBook-Pro.local,5
+1542899562243,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,6
+1542899562468,272,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,272,Rocellas-MacBook-Pro.local,3
+1542899562740,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,6
+1542899562965,302,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,302,Rocellas-MacBook-Pro.local,4
+1542899563268,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,4
+1542899563493,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,3
+1542899563718,220,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,220,Rocellas-MacBook-Pro.local,4
+1542899563938,261,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,261,Rocellas-MacBook-Pro.local,4
+1542899564199,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,223,Rocellas-MacBook-Pro.local,3
+1542899564423,225,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,225,Rocellas-MacBook-Pro.local,3
+1542899564649,217,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,217,Rocellas-MacBook-Pro.local,2
+1542899564867,244,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,244,Rocellas-MacBook-Pro.local,5
+1542899565111,224,health_check ,200,OK,Thread Group 1-1,true,8611,1,1,224,Rocellas-MacBook-Pro.local,4

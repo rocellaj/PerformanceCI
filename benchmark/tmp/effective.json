@@ -111,8 +111,19 @@
   }, 
   {
    "module": "passfail", 
-   "criteria": [
-    {
+   "criteria": {
+    "Passed Transactions": {
+     "timeframe": 0, 
+     "stop": false, 
+     "label": "health_check <", 
+     "threshold": "300ms", 
+     "logic": "for", 
+     "fail": false, 
+     "message": null, 
+     "condition": "=", 
+     "subject": "avg-rt"
+    }, 
+    "Failed transactions": {
      "timeframe": 0, 
      "stop": true, 
      "label": "health_check ", 
@@ -123,7 +134,7 @@
      "condition": ">", 
      "subject": "avg-rt"
     }
-   ]
+   }
   }
  ], 
  "modules": {

@@ -1,3 +1,8 @@
+# services: 
+# - module: 
+#     post-process: 
+#       - cat /benchmark/tmp/bzt.log
+
 execution:
 - concurrency: 1
   # ramp-up: 1m
@@ -28,7 +33,7 @@ modules:
 
 settings: 
   artifacts-dir: benchmark/tmp
-    
+  
 reporting:
 - module: final_stats
   summary: true 
@@ -37,6 +42,11 @@ reporting:
   failed-labels: false  
   test-duration: true 
 
+  # SLA: 200ms = 0.2s 
+    # Pass: <= 200ms 
+    # Fail > 200ms 
+
 - module: passfail
   criteria:
-    - avg-rt of health_check >300ms, stop as failed
+    Passed Transactions: avg-rt of health_check <=300ms, continue as non-failed
+    Failed transactions: avg-rt of health_check >300ms, stop as failed

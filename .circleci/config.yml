@@ -46,6 +46,9 @@ jobs:
       - run: 
           name: 'Initiate benchmark test'
           command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
+      - run: 
+          name: 'Summary'
+          command: 'cat benchmark/tmp/bzt.log'
 
       #- run: 'bzt benchmark/scripts/poc_jmeter_2.yml -o modules.console.disable=true' < this is working
 

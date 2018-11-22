@@ -191,15 +191,26 @@ reporting:
   summary-labels: false
   test-duration: true
 - criteria:
-  - condition: '>'
-    fail: true
-    label: 'health_check '
-    logic: for
-    message: null
-    stop: true
-    subject: avg-rt
-    threshold: 300ms
-    timeframe: 0
+    Failed transactions:
+      condition: '>'
+      fail: true
+      label: 'health_check '
+      logic: for
+      message: null
+      stop: true
+      subject: avg-rt
+      threshold: 300ms
+      timeframe: 0
+    Passed Transactions:
+      condition: '='
+      fail: false
+      label: health_check <
+      logic: for
+      message: null
+      stop: false
+      subject: avg-rt
+      threshold: 300ms
+      timeframe: 0
   module: passfail
 scenarios:
   simple:

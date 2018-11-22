@@ -2,17 +2,34 @@
 execution:
 - concurrency: 1
   hold-for: 1m
-  ramp-up: 1m
   scenario: simple
 modules:
+  console:
+    disable: true
   jmeter:
+    detect-plugins: false
+    download-link: https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip
+    force-ctg: true
     path: benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
     version: 5.0
+reporting:
+- failed-labels: false
+  module: final_stats
+  percentiles: false
+  summary: true
+  summary-labels: false
+  test-duration: true
+- criteria:
+    Failed transactions: avg-rt of health_check >300ms, stop as failed
+    Passed Transactions: avg-rt of health_check <=300ms, continue as non-failed
+  module: passfail
 scenarios:
   simple:
-    requests:
-    - http://blazedemo.com/
-    think-time: 0.75
+    script: benchmark/scripts/poc_jmeter_2.jmx
+services:
+- module:
+    post-process:
+    - cat /benchmark/tmp/bzt.log
 settings:
   artifacts-dir: benchmark/tmp
 
