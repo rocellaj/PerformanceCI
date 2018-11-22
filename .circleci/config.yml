@@ -4,8 +4,8 @@ jobs:
     docker:
       - image: circleci/node:8
         environment: 
-        LC_ALL: en_US.UTF-8
-        LANG: en_US.UTF-8
+          LC_ALL: en_US.UTF-8
+          LANG: en_US.UTF-8
 
     working_directory: ~/devTings
 
@@ -43,20 +43,13 @@ jobs:
 
     steps: 
       - checkout
-      # - run: 
-      #     name: 'Install taurus'
-      #     command: 'sudo pip install bzt'
-      # - run: 
-      #     name: 'Initiate benchmark test'
-      #     command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
       - run: 
-          name: 'Summary'
-          command: 'echo $LANG'
-      - run: 'LANG=en_US.utf8'
-      - run: 'cat /etc/default/locale'
+          name: 'Install taurus'
+          command: 'sudo pip install bzt'
       - run: 
-          name: 'Summary'
-          command: 'echo $LANG'
+          name: 'Initiate benchmark test'
+          command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
+
 
       #- run: 'bzt benchmark/scripts/poc_jmeter_2.yml -o modules.console.disable=true' < this is working
 
