@@ -54,3 +54,7 @@
 2018-11-22 10:12:08,478 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
 2018-11-22 10:12:08,879 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
 2018-11-22 10:12:08,879 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2018-11-22 10:13:08,533 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-1
+2018-11-22 10:13:08,533 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2018-11-22 10:13:08,533 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2018-11-22 10:13:08,535 INFO o.a.j.e.StandardJMeterEngine: Forced JVM shutdown requested at end of test
