@@ -50,6 +50,7 @@ jobs:
           name: 'Summary'
           command: 'echo $LANG'
       - run: 'LANG=en_US.utf8'
+      - run: 'cat /etc/default/locale'
       - run: 
           name: 'Summary'
           command: 'echo $LANG'
