@@ -49,7 +49,7 @@ jobs:
           name: 'Initiate benchmark test'
           command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
       - run:
-          shell: /usr/bin/python3
+          shell: /usr/bin/python2.7
           command:
               import sys
               print(sys.version)
