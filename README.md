@@ -1,12 +1,3 @@
-# Express 
-# Knex 
-# React 
-
-# PostgreSQL
-Create local database 
-
-# Integration 
-
 # JMeter
 Create performance test scripts via jmeter 
 1. Install JMeter 
@@ -61,11 +52,6 @@ Configure repository with circle ci
       - run: 
           name: 'Initiate benchmark test'
           command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
-      - run:
-          shell: /usr/bin/python2.7
-          command:
-              import sys
-              print(sys.version)
     ```
     
 4. Add a workflow 
@@ -80,3 +66,12 @@ Configure repository with circle ci
           requires: 
             - build
     ```
+
+   
+# React/Knex/PostgreSQL
+
+Reference: 
+- https://medium.com/front-end-hacking/calling-express-api-in-react-using-react-script-e19084a76a8a
+- https://blog.logrocket.com/setting-up-a-restful-api-with-node-js-and-postgresql-d96d6fc892d8
+- https://gist.github.com/laurenfazah/e0b0033cdc40a313d4710cc04e654556
+
