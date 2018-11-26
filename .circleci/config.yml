@@ -19,7 +19,7 @@ jobs:
       # - run: rm -r package-lock.json
       # - run: rm -r package.json 
       # - run: yarn install
-      - run: ipconfig
+      - run: ifconfig
       - run: 
           name: yarn start
           command: yarn start
