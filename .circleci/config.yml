@@ -27,7 +27,7 @@ jobs:
           -c "SELECT current_database();"
       - run: sudo npm install knex -g
       - run: knex --version
-      - run: 'knex migrate: latest'
+      - run: 'knex migrate:latest'
       # - run: 
       #     name: yarn start
       #     command: yarn start
