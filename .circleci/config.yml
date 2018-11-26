@@ -5,6 +5,7 @@ jobs:
       - image: circleci/python:2.7.15-stretch-node-browsers-legacy
       # - image: circleci/node:8
       # - image: circleci/python:2.7-browsers
+      - image: circleci/postgres:9.6.5-alpine-ram
     parallelism: 4 
 
     working_directory: ~/devTings
@@ -15,23 +16,19 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
-      - setup_remote_docker: 
-          docker_layer_caching: true 
-      - run: docker build .
-      # - run: rm -r package-lock.json
-      # - run: rm -r package.json 
-      # - run: yarn install
-      - run: ifconfig
-      - run: 
-          name: yarn start
-          command: yarn start
-          background: true
-      - run: 
-          name: 'Install taurus'
-          command: 'sudo pip install bzt'
-      - run: 
-          name: 'Initiate benchmark test'
-          command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
+      - run: sudo apt-get update 
+      - run: sudo apt-get install postgresql-client-9.6
+      - run: whoami
+      # - run: 
+      #     name: yarn start
+      #     command: yarn start
+      #     background: true
+      # - run: 
+      #     name: 'Install taurus'
+      #     command: 'sudo pip install bzt'
+      # - run: 
+      #     name: 'Initiate benchmark test'
+      #     command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
           
       - save_cache:
           paths:
