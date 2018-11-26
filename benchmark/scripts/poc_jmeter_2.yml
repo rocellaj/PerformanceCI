@@ -6,7 +6,7 @@
 execution:
 - concurrency: 1
   # ramp-up: 1m
-  hold-for: 5s
+  hold-for: 1m
   scenario: simple
 
 #part of poc
