@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python-node-browsers
+      - image: circleci/python:2.7.15-stretch-node-browsers-legacy
       # - image: circleci/node:8
       # - image: circleci/python:2.7-browsers
     parallelism: 4 
