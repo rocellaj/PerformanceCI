@@ -25,6 +25,8 @@ jobs:
           psql \
           -d $TEST_DATABASE_URL \
           -c "SELECT current_database();"
+
+      - run: npm install knex
       # - run: 
       #     name: yarn start
       #     command: yarn start
