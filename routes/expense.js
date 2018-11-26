@@ -19,4 +19,5 @@ router.get('/', function(req, res, next) {
     response.status(200).json(results.rows)
   })
 });
+
 module.exports = router;

@@ -16,8 +16,9 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
-      - run: npm install
-      - run: npm start
+      # - run: rm -r package-lock.json
+      # - run: npm install
+      - run: yarn start
 
       - save_cache:
           paths:
@@ -50,11 +51,6 @@ jobs:
       - run: 
           name: 'Initiate benchmark test'
           command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
-      - run:
-          shell: /usr/bin/python2.7
-          command:
-              import sys
-              print(sys.version)
         
       #- run: 'bzt benchmark/scripts/poc_jmeter_2.yml -o modules.console.disable=true' < this is working
 
