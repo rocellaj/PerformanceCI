@@ -2,8 +2,9 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8
-      - image: circleci/python:2.7-browsers
+      - image: circleci/python-node-browsers
+      # - image: circleci/node:8
+      # - image: circleci/python:2.7-browsers
     parallelism: 4 
 
     working_directory: ~/devTings
