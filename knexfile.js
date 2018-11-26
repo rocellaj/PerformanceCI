@@ -11,7 +11,7 @@ module.exports = {
           user: 'root',
           password: '',
 
-          database: 'travel',
+          database: 'circle_test',
           charset: 'utf8',
       }
   }
