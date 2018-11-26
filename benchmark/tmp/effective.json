@@ -341,7 +341,7 @@
    "throughput": {
     "local": null
    }, 
-   "hold-for": "10s", 
+   "hold-for": "1m", 
    "concurrency": {
     "local": 1
    }
