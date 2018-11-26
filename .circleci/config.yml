@@ -16,6 +16,7 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
+      - run: npm install
       - run: npm start
 
       - save_cache:
