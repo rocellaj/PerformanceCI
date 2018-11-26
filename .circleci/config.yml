@@ -26,7 +26,7 @@ jobs:
           -d $TEST_DATABASE_URL \
           -c "SELECT current_database();"
 
-      - run: npm install knex -g
+      - run: sudo npm install knex -g
       - run: npm -v
       - run: node -v
       - run: knex --version
