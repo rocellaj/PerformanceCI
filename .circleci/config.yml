@@ -71,7 +71,7 @@ workflows:
   build_deploy: 
     jobs: 
       - build
-      - taurus_test
+      # - taurus_test
       # - taurus_test: 
       #     filters: 
       #       branches: 
