@@ -54,7 +54,7 @@ cli-aliases:
 execution:
 - concurrency:
     local: 1
-  hold-for: 1m
+  hold-for: 10s
   scenario: simple
   throughput:
     local: null
