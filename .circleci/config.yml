@@ -25,11 +25,14 @@ jobs:
           psql \
           -d $TEST_DATABASE_URL \
           -c "SELECT current_database();"
+      - run: |
+      psql \
+      -d $TEST_DATABASE_URL \
+      -c "SELECT current_database();"
 
       - run: sudo npm install knex -g
-      - run: npm -v
-      - run: node -v
       - run: knex --version
+      - run: knex migrate: latest
       # - run: 
       #     name: yarn start
       #     command: yarn start
