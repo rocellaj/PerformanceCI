@@ -28,6 +28,11 @@ jobs:
       - run: sudo npm install knex -g
       - run: knex --version
       - run: 'knex migrate:latest'
+      - run: |
+          psql \
+          -d $TEST_DATABASE_URL \
+          -c "select * from information_schema.tables"
+          
       # - run: 
       #     name: yarn start
       #     command: yarn start
