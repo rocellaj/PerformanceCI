@@ -37,17 +37,16 @@ jobs:
           psql \
           -d $TEST_DATABASE_URL \
           -c "select * from users"
-
-      # - run: 
-      #     name: yarn start
-      #     command: yarn start
-      #     background: true
-      # - run: 
-      #     name: 'Install taurus'
-      #     command: 'sudo pip install bzt'
-      # - run: 
-      #     name: 'Initiate benchmark test'
-      #     command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
+      - run: 
+          name: yarn start
+          command: yarn start
+          background: true
+      - run: 
+          name: 'Install taurus'
+          command: 'sudo pip install bzt'
+      - run: 
+          name: 'Initiate benchmark test'
+          command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
           
       - save_cache:
           paths:
