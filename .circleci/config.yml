@@ -27,6 +27,7 @@ jobs:
           -c "SELECT current_database();"
 
       - run: npm install knex
+      - run: knex -V
       # - run: 
       #     name: yarn start
       #     command: yarn start
