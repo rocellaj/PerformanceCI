@@ -25,11 +25,6 @@ jobs:
           psql \
           -d $TEST_DATABASE_URL \
           -c "SELECT current_database();"
-      - run: |
-      psql \
-      -d $TEST_DATABASE_URL \
-      -c "SELECT current_database();"
-
       - run: sudo npm install knex -g
       - run: knex --version
       - run: knex migrate: latest
