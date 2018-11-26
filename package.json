@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"node app.js\" \"cd client && npm start\""
+    "start": "node app.js"
   },
   "dependencies": {
     "@material-ui/core": "^3.5.1",
