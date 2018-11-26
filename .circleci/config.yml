@@ -32,7 +32,12 @@ jobs:
           psql \
           -d $TEST_DATABASE_URL \
           -c "select * from information_schema.tables"
-          
+      - run: 'knex seed:run'
+      - run: |
+          psql \
+          -d $TEST_DATABASE_URL \
+          -c "select * from users"
+
       # - run: 
       #     name: yarn start
       #     command: yarn start
