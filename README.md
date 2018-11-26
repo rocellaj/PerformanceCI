@@ -10,6 +10,15 @@ Create performance test scripts via jmeter
     ````
 3. Create scripts and save (optional: import to repo)
 
+# Taurus 
+Integrate jmeter scripts with taurus 
+1. Installation will be done in the docker 
+2. Create config file with the following properties 
+    - Execution 
+    - Scenario 
+    - Modules
+    - Pass/Fail Criteria 
+
 # CircleCI 
 Configure repository with circle ci 
 
