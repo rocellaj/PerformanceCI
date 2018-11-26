@@ -15,7 +15,9 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
-
+      - setup_remote_docker: 
+          docker_layer_caching: true 
+      - run: docker build .
       # - run: rm -r package-lock.json
       # - run: rm -r package.json 
       # - run: yarn install
