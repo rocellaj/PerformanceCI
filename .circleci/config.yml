@@ -16,7 +16,7 @@ jobs:
           - v1-dependencies-
 
       - run: rm -r package-lock.json
-      - run: rm -r package.json 
+      # - run: rm -r package.json 
       - run: yarn install
       # - run: npm install
       - run: yarn start
