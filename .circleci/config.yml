@@ -22,6 +22,12 @@ jobs:
       # - run: yarn install
       # - run: npm install
       - run: yarn start
+      - run: 
+          name: 'Install taurus'
+          command: 'sudo pip install bzt'
+      - run: 
+          name: 'Initiate benchmark test'
+          command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
 
       - save_cache:
           paths:
@@ -40,20 +46,20 @@ jobs:
   #         name: initiate benchmark test
   #         command: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
 
-  taurus_test: 
-    docker: 
-      - image: circleci/python:2.7-browsers
+  # taurus_test: 
+  #   docker: 
+  #     - image: circleci/python:2.7-browsers
 
-    working_directory: ~/devTings
+  #   working_directory: ~/devTings
 
-    steps: 
-      - checkout
-      - run: 
-          name: 'Install taurus'
-          command: 'sudo pip install bzt'
-      - run: 
-          name: 'Initiate benchmark test'
-          command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
+  #   steps: 
+  #     - checkout
+  #     - run: 
+  #         name: 'Install taurus'
+  #         command: 'sudo pip install bzt'
+  #     - run: 
+  #         name: 'Initiate benchmark test'
+  #         command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
         
       #- run: 'bzt benchmark/scripts/poc_jmeter_2.yml -o modules.console.disable=true' < this is working
 
@@ -63,7 +69,7 @@ workflows:
   build_deploy: 
     jobs: 
       - build
-      - taurus_test
+      # - taurus_test
       # - taurus_test: 
       #     filters: 
       #       branches: 
