@@ -1,4 +1,4 @@
-# Performance Circle CI Integration 
+# Taurus/Jmeter & CircleCI Integration 
 Integrate benchmark test for every builds in circleci and enable reporting in the terminal
 
 # JMeter
