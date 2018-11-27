@@ -1,4 +1,4 @@
-# Purpose 
+# Performance Circle CI Integration 
 Integrate benchmark test for every builds in circleci and enable reporting in the terminal
 
 # JMeter
