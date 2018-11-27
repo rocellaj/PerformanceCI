@@ -18,23 +18,19 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
-      - run: sudo apt-get update 
-      - run: sudo apt-get install postgresql-client-9.6
-      - run: whoami
-      - run: |
-          psql \
-          -d $TEST_DATABASE_URL \
-          -c "SELECT current_database();"
-      - run: sudo npm install knex -g
-      - run: knex --version
-      - run: 'knex migrate:latest'
-      - run: 'knex seed:run'
-      - run: |
-          psql \
-          -d $TEST_DATABASE_URL \
-          -c "select * from users"
       - run: 
-          name: yarn start
+          name: 'Install Database'
+          command: |
+            sudo apt-get update 
+            sudo apt-get install postgresql-client-9.6
+      -run: 
+          name: 'Setup Database'
+          command: |
+            sudo npm install knex -g
+            knex migrate:latest
+            knex seed:run
+      - run: 
+          name: 'Start Application'
           command: yarn start
           background: true
       - run: 
