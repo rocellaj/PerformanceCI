@@ -23,7 +23,7 @@ jobs:
           command: |
             sudo apt-get update 
             sudo apt-get install postgresql-client-9.6
-      -run: 
+      - run: 
           name: 'Setup Database'
           command: |
             sudo npm install knex -g
