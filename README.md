@@ -1,3 +1,6 @@
+# Purpose 
+Integrate benchmark test for every builds in circleci and enable reporting in the terminal
+
 # JMeter
 Create performance test scripts via jmeter 
 1. Install JMeter 
