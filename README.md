@@ -78,8 +78,43 @@ Configure repository with circle ci
           requires: 
             - build
     ```
+# CircleCI - Express, Knex and Postgre (POC) 
 
-   
+1. Create database in postgres 
+2. Create knex migration scripts to create database structure 
+3. Create seed files to import data 
+4. Run migration files and seed files 
+5. Create API's using express which will retrieve information from database 
+6. Test API 
+7. Create Jmeter scripts
+    - Insert assertions 
+    - Disable "Use Keep Alive" 
+8. Update circle ci - config.yml 
+
+    ```sh
+    - run: 
+              name: 'Install Database'
+              command: |
+                sudo apt-get update 
+                sudo apt-get install postgresql-client-9.6
+          - run: 
+              name: 'Setup Database'
+              command: |
+                sudo npm install knex -g
+                knex migrate:latest
+                knex seed:run
+          - run: 
+              name: 'Start Application'
+              command: yarn start
+              background: true
+          - run: 
+              name: 'Install taurus'
+              command: 'sudo pip install bzt'
+          - run: 
+              name: 'Initiate benchmark test'
+              command: 'bzt benchmark/scripts/poc_jmeter_2.yml'
+     ```
+     
 # React/Knex/PostgreSQL
 
 Reference: 
