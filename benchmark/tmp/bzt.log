@@ -1,71 +1,68 @@
-[2018-11-28 10:20:45,417 INFO root] Taurus CLI Tool v1.13.0
-[2018-11-28 10:20:45,418 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/var/folders/_7/c5br59cd02v6qkd_sqxjqtl40000gn/T/bzt_oR28O5.log', 'option': None, 'aliases': []}
-[2018-11-28 10:20:45,418 DEBUG root] Python: CPython 2.7.15
-[2018-11-28 10:20:45,418 DEBUG root] OS: ('Darwin', 'Rocellas-MacBook-Pro.local', '18.0.0', 'Darwin Kernel Version 18.0.0: Wed Aug 22 20:13:40 PDT 2018; root:xnu-4903.201.2~1/RELEASE_X86_64', 'x86_64', 'i386')
-[2018-11-28 10:20:45,419 INFO root] Starting with configs: ['benchmark/scripts/poc_jmeter_2.yml']
-[2018-11-28 10:20:45,419 DEBUG root] Using personal config: /Users/rocellajimenez/.bzt-rc
-[2018-11-28 10:20:45,419 INFO Engine] Configuring...
-[2018-11-28 10:20:45,419 DEBUG Engine] No machine configs dir: /usr/local/Cellar/bzt/1.13.0/libexec/bin/../etc/bzt.d
-[2018-11-28 10:20:45,419 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
-[2018-11-28 10:20:45,419 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
-[2018-11-28 10:20:45,419 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
-[2018-11-28 10:20:45,448 DEBUG Engine] User configs list: ['/Users/rocellajimenez/.bzt-rc', 'benchmark/scripts/poc_jmeter_2.yml']
-[2018-11-28 10:20:45,448 DEBUG Engine.Configuration] Configs: ['/Users/rocellajimenez/.bzt-rc', 'benchmark/scripts/poc_jmeter_2.yml']
-[2018-11-28 10:20:45,449 DEBUG Engine.Configuration] Reading /Users/rocellajimenez/.bzt-rc as YAML
-[2018-11-28 10:20:45,453 DEBUG Engine.Configuration] Reading benchmark/scripts/poc_jmeter_2.yml as YAML
-[2018-11-28 10:20:45,458 DEBUG Engine.Configuration] Configs: ['/Users/rocellajimenez/.bzt-rc', 'benchmark/scripts/poc_jmeter_2.yml']
-[2018-11-28 10:20:45,458 DEBUG Engine.Configuration] Reading /Users/rocellajimenez/.bzt-rc as YAML
-[2018-11-28 10:20:45,462 DEBUG Engine.Configuration] Reading benchmark/scripts/poc_jmeter_2.yml as YAML
-[2018-11-28 10:20:45,475 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.13.0&installID=macos-8c8590bd2b94
-[2018-11-28 10:20:45,475 DEBUG HTTPClient] Making HTTP request GET http://gettaurus.org/updates/?version=1.13.0&installID=macos-8c8590bd2b94
-[2018-11-28 10:20:45,475 INFO Engine] Artifacts dir: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp
-[2018-11-28 10:20:45,480 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective
-[2018-11-28 10:20:45,483 DEBUG urllib3.connectionpool] Starting new HTTP connection (1): gettaurus.org:80
-[2018-11-28 10:20:45,483 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.yml
-[2018-11-28 10:20:45,508 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.json
-[2018-11-28 10:20:45,509 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/merged-5.yml
-[2018-11-28 10:20:45,509 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/merged-5.yml
-[2018-11-28 10:20:45,512 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/merged-5.json
-[2018-11-28 10:20:45,513 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/merged-5.json
-[2018-11-28 10:20:45,513 DEBUG Engine] Add existing artifact (move=False): benchmark/scripts/poc_jmeter_2.yml
-[2018-11-28 10:20:45,513 DEBUG Engine] Copying benchmark/scripts/poc_jmeter_2.yml to /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/poc_jmeter_2.yml
-[2018-11-28 10:20:45,514 DEBUG Engine.Environment] Replace 'TAURUS_ARTIFACTS_DIR' in environment
-[2018-11-28 10:20:45,514 DEBUG root] Closing log handler: /var/folders/_7/c5br59cd02v6qkd_sqxjqtl40000gn/T/bzt_oR28O5.log
-[2018-11-28 10:20:45,515 DEBUG root] Switched writing logs to /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/bzt.log
-[2018-11-28 10:20:45,515 DEBUG root] Linting config
-[2018-11-28 10:20:45,517 INFO Engine] Preparing...
-[2018-11-28 10:20:45,517 DEBUG Engine] Module config: consolidator {'class': u'bzt.modules.aggregator.ConsolidatingAggregator'}
-[2018-11-28 10:20:45,517 DEBUG root] Importing module: bzt.modules.aggregator
-[2018-11-28 10:20:45,603 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
-[2018-11-28 10:20:45,603 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
-[2018-11-28 10:20:45,603 DEBUG Engine] Module config: monitoring {'class': u'bzt.modules.monitoring.Monitoring'}
-[2018-11-28 10:20:45,603 DEBUG root] Importing module: bzt.modules.monitoring
-[2018-11-28 10:20:45,604 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
-[2018-11-28 10:20:45,605 DEBUG Engine] Module config: local {'class': u'bzt.modules.provisioning.Local'}
-[2018-11-28 10:20:45,605 DEBUG root] Importing module: bzt.modules.provisioning
-[2018-11-28 10:20:45,605 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
-[2018-11-28 10:20:45,605 DEBUG Engine] Module config: jmeter {'force-ctg': True, 'detect-plugins': False, 'class': u'bzt.modules.jmeter.JMeterExecutor', 'version': 5.0, 'download-link': u'https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip', 'plugins': [u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst'], 'path': u'benchmark/jmeter/apache-jmeter-5.0/bin/jmeter', 'properties': {'jmeter.save.saveservice.autoflush': u'true', 'jmeter.save.saveservice.connect_time': u'true', 'summariser.name': u'', 'jmeterengine.force.system.exit': u'true'}, 'protocol-handlers': {'http': u'bzt.jmx.http.HTTPProtocolHandler'}}
-[2018-11-28 10:20:45,605 DEBUG root] Importing module: bzt.modules.jmeter
-[2018-11-28 10:20:45,612 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/jmeter.pyc'>
-[2018-11-28 10:20:45,612 DEBUG Engine.local] Preparing executor: None/4519998608
-[2018-11-28 10:20:45,613 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/jmeter-5.log
-[2018-11-28 10:20:45,613 DEBUG Engine.jmeter] Checking if port 4445 is free
-[2018-11-28 10:20:45,614 DEBUG Engine.jmeter] Port 4445 is busy
-[2018-11-28 10:20:45,614 DEBUG Engine.jmeter] Port 4445 is busy, trying next one
-[2018-11-28 10:20:45,614 DEBUG Engine.jmeter] Checking if port 4446 is free
-[2018-11-28 10:20:45,614 DEBUG Engine.jmeter] Port 4446 is free
-[2018-11-28 10:20:45,614 DEBUG Engine.jmeter] Using port 4446 for management
-[2018-11-28 10:20:45,615 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
-[2018-11-28 10:20:45,713 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_171"
+[2018-11-28 11:29:26,500 INFO root] Taurus CLI Tool v1.13.0
+[2018-11-28 11:29:26,500 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/var/folders/_7/c5br59cd02v6qkd_sqxjqtl40000gn/T/bzt_kFYfKK.log', 'option': None, 'aliases': []}
+[2018-11-28 11:29:26,500 DEBUG root] Python: CPython 2.7.15
+[2018-11-28 11:29:26,501 DEBUG root] OS: ('Darwin', 'Rocellas-MacBook-Pro.local', '18.0.0', 'Darwin Kernel Version 18.0.0: Wed Aug 22 20:13:40 PDT 2018; root:xnu-4903.201.2~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2018-11-28 11:29:26,501 INFO root] Starting with configs: ['benchmark/scripts/poc_jmeter_2.yml']
+[2018-11-28 11:29:26,501 DEBUG root] Using personal config: /Users/rocellajimenez/.bzt-rc
+[2018-11-28 11:29:26,501 INFO Engine] Configuring...
+[2018-11-28 11:29:26,502 DEBUG Engine] No machine configs dir: /usr/local/Cellar/bzt/1.13.0/libexec/bin/../etc/bzt.d
+[2018-11-28 11:29:26,502 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-11-28 11:29:26,502 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-11-28 11:29:26,502 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2018-11-28 11:29:26,531 DEBUG Engine] User configs list: ['/Users/rocellajimenez/.bzt-rc', 'benchmark/scripts/poc_jmeter_2.yml']
+[2018-11-28 11:29:26,531 DEBUG Engine.Configuration] Configs: ['/Users/rocellajimenez/.bzt-rc', 'benchmark/scripts/poc_jmeter_2.yml']
+[2018-11-28 11:29:26,532 DEBUG Engine.Configuration] Reading /Users/rocellajimenez/.bzt-rc as YAML
+[2018-11-28 11:29:26,535 DEBUG Engine.Configuration] Reading benchmark/scripts/poc_jmeter_2.yml as YAML
+[2018-11-28 11:29:26,540 DEBUG Engine.Configuration] Configs: ['/Users/rocellajimenez/.bzt-rc', 'benchmark/scripts/poc_jmeter_2.yml']
+[2018-11-28 11:29:26,540 DEBUG Engine.Configuration] Reading /Users/rocellajimenez/.bzt-rc as YAML
+[2018-11-28 11:29:26,544 DEBUG Engine.Configuration] Reading benchmark/scripts/poc_jmeter_2.yml as YAML
+[2018-11-28 11:29:26,556 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.13.0&installID=macos-8c8590bd2b94
+[2018-11-28 11:29:26,557 DEBUG HTTPClient] Making HTTP request GET http://gettaurus.org/updates/?version=1.13.0&installID=macos-8c8590bd2b94
+[2018-11-28 11:29:26,561 INFO Engine] Artifacts dir: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp
+[2018-11-28 11:29:26,562 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective
+[2018-11-28 11:29:26,565 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.yml
+[2018-11-28 11:29:26,565 DEBUG urllib3.connectionpool] Starting new HTTP connection (1): gettaurus.org:80
+[2018-11-28 11:29:26,597 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.json
+[2018-11-28 11:29:26,598 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/merged-8.yml
+[2018-11-28 11:29:26,599 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/merged-8.yml
+[2018-11-28 11:29:26,602 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/merged-8.json
+[2018-11-28 11:29:26,603 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/merged-8.json
+[2018-11-28 11:29:26,603 DEBUG Engine] Add existing artifact (move=False): benchmark/scripts/poc_jmeter_2.yml
+[2018-11-28 11:29:26,603 DEBUG Engine] Copying benchmark/scripts/poc_jmeter_2.yml to /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/poc_jmeter_2.yml
+[2018-11-28 11:29:26,604 DEBUG Engine.Environment] Replace 'TAURUS_ARTIFACTS_DIR' in environment
+[2018-11-28 11:29:26,604 DEBUG root] Closing log handler: /var/folders/_7/c5br59cd02v6qkd_sqxjqtl40000gn/T/bzt_kFYfKK.log
+[2018-11-28 11:29:26,605 DEBUG root] Switched writing logs to /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/bzt.log
+[2018-11-28 11:29:26,605 DEBUG root] Linting config
+[2018-11-28 11:29:26,607 INFO Engine] Preparing...
+[2018-11-28 11:29:26,607 DEBUG Engine] Module config: consolidator {'class': u'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2018-11-28 11:29:26,607 DEBUG root] Importing module: bzt.modules.aggregator
+[2018-11-28 11:29:26,694 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2018-11-28 11:29:26,694 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2018-11-28 11:29:26,695 DEBUG Engine] Module config: monitoring {'class': u'bzt.modules.monitoring.Monitoring'}
+[2018-11-28 11:29:26,695 DEBUG root] Importing module: bzt.modules.monitoring
+[2018-11-28 11:29:26,696 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2018-11-28 11:29:26,696 DEBUG Engine] Module config: local {'class': u'bzt.modules.provisioning.Local'}
+[2018-11-28 11:29:26,696 DEBUG root] Importing module: bzt.modules.provisioning
+[2018-11-28 11:29:26,696 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2018-11-28 11:29:26,697 DEBUG Engine] Module config: jmeter {'force-ctg': True, 'detect-plugins': False, 'class': u'bzt.modules.jmeter.JMeterExecutor', 'version': 5.0, 'download-link': u'https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip', 'plugins': [u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst'], 'path': u'benchmark/jmeter/apache-jmeter-5.0/bin/jmeter', 'properties': {'jmeter.save.saveservice.autoflush': u'true', 'jmeter.save.saveservice.connect_time': u'true', 'summariser.name': u'', 'jmeterengine.force.system.exit': u'true'}, 'protocol-handlers': {'http': u'bzt.jmx.http.HTTPProtocolHandler'}}
+[2018-11-28 11:29:26,697 DEBUG root] Importing module: bzt.modules.jmeter
+[2018-11-28 11:29:26,704 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/jmeter.pyc'>
+[2018-11-28 11:29:26,704 DEBUG Engine.local] Preparing executor: None/4451603600
+[2018-11-28 11:29:26,705 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/jmeter-8.log
+[2018-11-28 11:29:26,705 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2018-11-28 11:29:26,706 DEBUG Engine.jmeter] Port 4445 is free
+[2018-11-28 11:29:26,706 DEBUG Engine.jmeter] Using port 4445 for management
+[2018-11-28 11:29:26,706 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2018-11-28 11:29:26,809 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_171"
 Java(TM) SE Runtime Environment (build 1.8.0_171-b11)
 Java HotSpot(TM) 64-Bit Server VM (build 25.171-b11, mixed mode)
-[2018-11-28 10:20:45,714 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
-[2018-11-28 10:20:45,714 DEBUG Engine.jmeter.JMeter] Trying jmeter: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
-[2018-11-28 10:20:45,714 DEBUG bzt.utils] Executing shell: [u'/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter', '-j', '/var/folders/_7/c5br59cd02v6qkd_sqxjqtl40000gn/T/jmeterrgtu3plog', '--version'] at .
-[2018-11-28 10:20:46,178 DEBUG urllib3.connectionpool] http://gettaurus.org:80 "GET /updates/?version=1.13.0&installID=macos-8c8590bd2b94 HTTP/1.1" 200 59
-[2018-11-28 10:20:46,179 DEBUG Engine] Taurus updates info: {u'needsUpgrade': True, u'latest': u'1.13.1'}
-[2018-11-28 10:20:46,180 WARNING Engine] There is newer version of Taurus 1.13.1 available, consider upgrading. What's new: http://gettaurus.org/docs/Changelog/
-[2018-11-28 10:20:46,615 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+[2018-11-28 11:29:26,809 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2018-11-28 11:29:26,810 DEBUG Engine.jmeter.JMeter] Trying jmeter: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
+[2018-11-28 11:29:26,810 DEBUG bzt.utils] Executing shell: [u'/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter', '-j', '/var/folders/_7/c5br59cd02v6qkd_sqxjqtl40000gn/T/jmeterZa2YTmlog', '--version'] at .
+[2018-11-28 11:29:27,033 DEBUG urllib3.connectionpool] http://gettaurus.org:80 "GET /updates/?version=1.13.0&installID=macos-8c8590bd2b94 HTTP/1.1" 200 59
+[2018-11-28 11:29:27,034 DEBUG Engine] Taurus updates info: {u'needsUpgrade': True, u'latest': u'1.13.1'}
+[2018-11-28 11:29:27,034 WARNING Engine] There is newer version of Taurus 1.13.1 available, consider upgrading. What's new: http://gettaurus.org/docs/Changelog/
+[2018-11-28 11:29:37,793 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
    / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
   / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
  / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
@@ -74,160 +71,186 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.171-b11, mixed mode)
 Copyright (c) 1999-2018 The Apache Software Foundation
 
  / None
-[2018-11-28 10:20:46,615 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=1, throughput=None, ramp_up=None, hold=300.0, iterations=0, duration=300.0, steps=None)
-[2018-11-28 10:20:46,617 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/kpi-4.jtl
-[2018-11-28 10:20:46,618 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/error-4.jtl
-[2018-11-28 10:20:46,619 INFO Engine.jmeter] 1 obsolete CookieManagers are found and fixed
-[2018-11-28 10:20:46,620 WARNING Engine.jmeter.LoadSettingsProcessor] Thread group detection: plugin for ConcurrentThreadGroup not found, regular ThreadGroup will be used
-[2018-11-28 10:20:46,621 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (Thread Group) to ThreadGroup and apply load parameters
-[2018-11-28 10:20:46,621 DEBUG JMX] Saving JMX to: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/scripts/modified_poc_jmeter_2.jmx
-[2018-11-28 10:20:46,622 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': u'true', 'jmeter.save.saveservice.connect_time': u'true', 'user.classpath': u'/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp:/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/scripts', 'sampleresult.default.encoding': 'UTF-8', 'summariser.name': u'', 'jmeterengine.force.system.exit': u'true', 'jmeter.save.saveservice.timestamp_format': 'ms', 'jmeterengine.nongui.maxport': 4446, 'jmeterengine.nongui.port': 4446}
-[2018-11-28 10:20:46,622 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/jmeter-bzt-5.properties
-[2018-11-28 10:20:46,622 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/jmeter-5.out
-[2018-11-28 10:20:46,623 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/jmeter-5.err
-[2018-11-28 10:20:46,623 DEBUG Engine] Module config: final-stats {'class': u'bzt.modules.reporting.FinalStatus'}
-[2018-11-28 10:20:46,623 DEBUG root] Importing module: bzt.modules.reporting
-[2018-11-28 10:20:46,631 DEBUG easyprocess] version=0.2.3
-[2018-11-28 10:20:46,633 DEBUG pyvirtualdisplay] version=0.2.1
-[2018-11-28 10:20:46,634 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
-[2018-11-28 10:20:46,635 DEBUG Engine] Module config: console {'disable': True, 'class': u'bzt.modules.console.ConsoleStatusReporter'}
-[2018-11-28 10:20:46,635 DEBUG root] Importing module: bzt.modules.console
-[2018-11-28 10:20:46,635 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/console.pyc'>
-[2018-11-28 10:20:46,635 DEBUG Engine] Module config: final_stats {'class': u'bzt.modules.reporting.FinalStatus'}
-[2018-11-28 10:20:46,635 DEBUG root] Importing module: bzt.modules.reporting
-[2018-11-28 10:20:46,635 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
-[2018-11-28 10:20:46,635 DEBUG Engine] Module config: passfail {'class': u'bzt.modules.passfail.PassFailStatus'}
-[2018-11-28 10:20:46,635 DEBUG root] Importing module: bzt.modules.passfail
-[2018-11-28 10:20:46,636 DEBUG root] Loading class: 'PassFailStatus' from <module 'bzt.modules.passfail' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/passfail.pyc'>
-[2018-11-28 10:20:46,636 DEBUG root] Importing module: bzt.modules.passfail
-[2018-11-28 10:20:46,637 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/passfail.pyc'>
-[2018-11-28 10:20:46,637 DEBUG root] Importing module: bzt.modules.passfail
-[2018-11-28 10:20:46,637 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/passfail.pyc'>
-[2018-11-28 10:20:46,639 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.yml
-[2018-11-28 10:20:46,663 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.json
-[2018-11-28 10:20:46,664 INFO Engine] Starting...
-[2018-11-28 10:20:46,664 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x10bbad350>
-[2018-11-28 10:20:46,664 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10bbadb90>
-[2018-11-28 10:20:46,664 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x10bb679d0>
-[2018-11-28 10:20:46,665 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x10d71b610>
-[2018-11-28 10:20:46,665 INFO Engine.console] Waiting for results...
-[2018-11-28 10:20:46,665 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x10d628e10>
-[2018-11-28 10:20:46,665 DEBUG Engine] Startup <bzt.modules.passfail.PassFailStatus object at 0x10d74f3d0>
-[2018-11-28 10:20:46,665 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x10bb67650>
-[2018-11-28 10:20:46,665 DEBUG Engine.local] Delay setup for None/simple: 0(start-at) + 0(delay) = 0
-[2018-11-28 10:20:46,667 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.yml
-[2018-11-28 10:20:46,690 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.json
-[2018-11-28 10:20:46,691 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
-[2018-11-28 10:20:46,691 DEBUG root] Leveled up log file verbosity
-[2018-11-28 10:20:46,692 DEBUG bzt.utils] Executing shell: [u'/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter', '-n', '-t', u'/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/scripts/modified_poc_jmeter_2.jmx', '-j', '/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/jmeter-5.log', '-q', '/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/jmeter-bzt-5.properties'] at /Users/rocellajimenez/Desktop/PerformanceCI
-[2018-11-28 10:20:46,706 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
-[2018-11-28 10:21:09,760 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 39s
-[2018-11-28 10:21:47,674 INFO Engine.console] Current: 1 vu	2 succ	0 fail	9.812 avg rt	/	Cumulative: 9.812 avg rt, 0% failures
-[2018-11-28 10:21:48,580 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 2s
-[2018-11-28 10:21:49,761 INFO Engine.console] Current: 1 vu	40 succ	0 fail	0.033 avg rt	/	Cumulative: 0.006 avg rt, 0% failures
-[2018-11-28 10:21:49,840 INFO Engine.console] Current: 1 vu	234 succ	0 fail	0.013 avg rt	/	Cumulative: 0.006 avg rt, 0% failures
-[2018-11-28 10:21:51,870 INFO Engine.console] Current: 1 vu	1063 succ	0 fail	0.001 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:21:52,913 INFO Engine.console] Current: 1 vu	78 succ	0 fail	0.022 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:21:53,933 INFO Engine.console] Current: 1 vu	288 succ	0 fail	0.001 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:21:54,839 INFO Engine.console] Current: 1 vu	718 succ	0 fail	0.001 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:22:15,000 INFO Engine.console] Current: 1 vu	1164 succ	0 fail	0.001 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:22:16,936 INFO Engine.console] Current: 1 vu	691 succ	0 fail	0.029 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:22:18,929 INFO Engine.console] Current: 1 vu	1099 succ	0 fail	0.001 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:22:25,626 INFO Engine.console] Current: 1 vu	254 succ	0 fail	0.011 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:22:27,682 INFO Engine.console] Current: 1 vu	1031 succ	0 fail	0.006 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:22:29,729 INFO Engine.console] Current: 1 vu	553 succ	0 fail	0.001 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:22:49,761 INFO Engine.console] Current: 1 vu	953 succ	0 fail	0.001 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:22:51,719 INFO Engine.console] Current: 1 vu	1177 succ	0 fail	0.017 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:23:00,540 INFO Engine.console] Current: 1 vu	13 succ	0 fail	0.079 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:23:02,614 INFO Engine.console] Current: 1 vu	361 succ	0 fail	0.023 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:23:23,418 INFO Engine.console] Current: 1 vu	1803 succ	0 fail	0.000 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:23:25,444 INFO Engine.console] Current: 1 vu	811 succ	0 fail	0.025 avg rt	/	Cumulative: 0.005 avg rt, 0% failures
-[2018-11-28 10:23:35,736 INFO Engine.console] Current: 1 vu	2020 succ	0 fail	0.000 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:23:37,754 INFO Engine.console] Current: 1 vu	438 succ	0 fail	0.022 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:23:39,824 INFO Engine.console] Current: 1 vu	802 succ	0 fail	0.000 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:23:40,733 INFO Engine.console] Current: 1 vu	2135 succ	0 fail	0.000 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:24:01,567 INFO Engine.console] Current: 1 vu	2091 succ	0 fail	0.000 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:24:02,371 INFO Engine.console] Current: 1 vu	1564 succ	0 fail	0.013 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:24:14,654 INFO Engine.console] Current: 1 vu	1672 succ	0 fail	0.001 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:24:16,611 INFO Engine.console] Current: 1 vu	819 succ	0 fail	0.014 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:24:18,684 INFO Engine.console] Current: 1 vu	648 succ	0 fail	0.001 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:24:19,580 INFO Engine.console] Current: 1 vu	1503 succ	0 fail	0.001 avg rt	/	Cumulative: 0.004 avg rt, 0% failures
-[2018-11-28 10:24:20,698 INFO Engine.console] Current: 1 vu	1328 succ	0 fail	0.001 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:24:21,588 INFO Engine.console] Current: 1 vu	1399 succ	0 fail	0.001 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:24:35,523 INFO Engine.console] Current: 1 vu	1781 succ	0 fail	0.000 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:24:37,543 INFO Engine.console] Current: 1 vu	1012 succ	0 fail	0.014 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:24:54,077 INFO Engine.console] Current: 1 vu	2113 succ	0 fail	0.000 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:24:56,005 INFO Engine.console] Current: 1 vu	365 succ	0 fail	0.043 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:24:58,098 INFO Engine.console] Current: 1 vu	140 succ	0 fail	0.001 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:24:59,003 INFO Engine.console] Current: 1 vu	1596 succ	0 fail	0.001 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:25:00,090 INFO Engine.console] Current: 1 vu	2084 succ	0 fail	0.000 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:25:12,561 INFO Engine.console] Current: 1 vu	1953 succ	0 fail	0.000 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:25:14,546 INFO Engine.console] Current: 1 vu	1221 succ	0 fail	0.011 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:25:32,547 INFO Engine.console] Current: 1 vu	1474 succ	0 fail	0.001 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:25:32,617 INFO Engine.console] Current: 1 vu	1194 succ	0 fail	0.008 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:25:34,713 INFO Engine.console] Current: 1 vu	126 succ	0 fail	0.061 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:25:36,677 INFO Engine.console] Current: 1 vu	808 succ	0 fail	0.001 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:25:37,774 INFO Engine.console] Current: 1 vu	1738 succ	0 fail	0.000 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:25:38,677 INFO Engine.console] Current: 1 vu	1837 succ	0 fail	0.000 avg rt	/	Cumulative: 0.003 avg rt, 0% failures
-[2018-11-28 10:25:49,327 WARNING Engine] Please wait for graceful shutdown...
-[2018-11-28 10:25:49,328 DEBUG root] Leveled up log file verbosity
-[2018-11-28 10:25:49,328 INFO Engine] Shutting down...
-[2018-11-28 10:25:49,328 DEBUG Engine] Current stop reason: None
-[2018-11-28 10:25:49,329 DEBUG Engine.local] Shutdown None/simple
-[2018-11-28 10:25:49,331 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.yml
-[2018-11-28 10:25:49,354 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.json
-[2018-11-28 10:25:49,355 INFO Engine] Post-processing...
-[2018-11-28 10:25:49,355 DEBUG Engine.local] Post-process None/simple
-[2018-11-28 10:25:49,355 DEBUG Engine] Add existing artifact (move=True): /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/scripts/modified_poc_jmeter_2.jmx
-[2018-11-28 10:25:49,356 DEBUG Engine] Moving /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/scripts/modified_poc_jmeter_2.jmx to /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/modified_poc_jmeter_2.jmx
-[2018-11-28 10:25:49,356 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Reading: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/error-4.jtl
-[2018-11-28 10:25:49,356 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader.FileReader] Reading: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/kpi-4.jtl
-[2018-11-28 10:25:49,356 DEBUG Engine.jmeter.JTLReader] Buffer len: 2; Known errors count: 0
-[2018-11-28 10:25:49,356 DEBUG Engine.jmeter.JTLReader] Aggregating: 1543418737
-[2018-11-28 10:25:49,416 DEBUG Engine.jmeter.JTLReader] Aggregating: 1543418738
-[2018-11-28 10:25:49,447 DEBUG Engine.consolidator] Consolidator buffer[4]: [1543418736, 1543418737, 1543418738, 1543418735]
-[2018-11-28 10:25:49,447 DEBUG Engine.consolidator] Merging into 1543418735
-[2018-11-28 10:25:49,447 DEBUG Engine.consolidator] Merging 1543418735
-[2018-11-28 10:25:49,450 DEBUG Engine.consolidator] Processed datapoint: 1543418735/None
-[2018-11-28 10:25:49,450 DEBUG Engine.consolidator] Merging into 1543418736
-[2018-11-28 10:25:49,450 DEBUG Engine.consolidator] Merging 1543418736
-[2018-11-28 10:25:49,453 DEBUG Engine.consolidator] Processed datapoint: 1543418736/None
-[2018-11-28 10:25:49,453 DEBUG Engine.consolidator] Merging into 1543418737
-[2018-11-28 10:25:49,453 DEBUG Engine.consolidator] Merging 1543418737
-[2018-11-28 10:25:49,455 DEBUG Engine.consolidator] Processed datapoint: 1543418737/None
-[2018-11-28 10:25:49,456 DEBUG Engine.consolidator] Merging into 1543418738
-[2018-11-28 10:25:49,456 DEBUG Engine.consolidator] Merging 1543418738
-[2018-11-28 10:25:49,459 DEBUG Engine.consolidator] Processed datapoint: 1543418738/None
-[2018-11-28 10:25:49,459 INFO Engine.final-stats] Test duration: 0:05:03
-[2018-11-28 10:25:49,459 INFO Engine.final-stats] Samples count: 98119, 0.00% failures
-[2018-11-28 10:25:49,459 INFO Engine.final-stats] Average times: total 0.003, latency 0.003, connect 0.003
-[2018-11-28 10:25:49,464 INFO Engine.final-stats] Percentiles:
+[2018-11-28 11:29:37,793 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=1, throughput=None, ramp_up=None, hold=300.0, iterations=0, duration=300.0, steps=None)
+[2018-11-28 11:29:37,796 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/kpi-7.jtl
+[2018-11-28 11:29:37,797 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/error-7.jtl
+[2018-11-28 11:29:37,798 INFO Engine.jmeter] 1 obsolete CookieManagers are found and fixed
+[2018-11-28 11:29:37,800 WARNING Engine.jmeter.LoadSettingsProcessor] Thread group detection: plugin for ConcurrentThreadGroup not found, regular ThreadGroup will be used
+[2018-11-28 11:29:37,801 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (Thread Group) to ThreadGroup and apply load parameters
+[2018-11-28 11:29:37,802 DEBUG JMX] Saving JMX to: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/scripts/modified_poc_jmeter_2.jmx
+[2018-11-28 11:29:37,802 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': u'true', 'jmeter.save.saveservice.connect_time': u'true', 'user.classpath': u'/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp:/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/scripts', 'sampleresult.default.encoding': 'UTF-8', 'summariser.name': u'', 'jmeterengine.force.system.exit': u'true', 'jmeter.save.saveservice.timestamp_format': 'ms', 'jmeterengine.nongui.maxport': 4445, 'jmeterengine.nongui.port': 4445}
+[2018-11-28 11:29:37,803 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/jmeter-bzt-8.properties
+[2018-11-28 11:29:37,803 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/jmeter-8.out
+[2018-11-28 11:29:37,803 DEBUG Engine] New artifact filename: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/jmeter-8.err
+[2018-11-28 11:29:37,804 DEBUG Engine] Module config: final-stats {'class': u'bzt.modules.reporting.FinalStatus'}
+[2018-11-28 11:29:37,804 DEBUG root] Importing module: bzt.modules.reporting
+[2018-11-28 11:29:37,815 DEBUG easyprocess] version=0.2.3
+[2018-11-28 11:29:37,817 DEBUG pyvirtualdisplay] version=0.2.1
+[2018-11-28 11:29:37,818 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2018-11-28 11:29:37,819 DEBUG Engine] Module config: console {'disable': True, 'class': u'bzt.modules.console.ConsoleStatusReporter'}
+[2018-11-28 11:29:37,819 DEBUG root] Importing module: bzt.modules.console
+[2018-11-28 11:29:37,819 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/console.pyc'>
+[2018-11-28 11:29:37,819 DEBUG Engine] Module config: final_stats {'class': u'bzt.modules.reporting.FinalStatus'}
+[2018-11-28 11:29:37,819 DEBUG root] Importing module: bzt.modules.reporting
+[2018-11-28 11:29:37,819 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2018-11-28 11:29:37,820 DEBUG Engine] Module config: passfail {'class': u'bzt.modules.passfail.PassFailStatus'}
+[2018-11-28 11:29:37,820 DEBUG root] Importing module: bzt.modules.passfail
+[2018-11-28 11:29:37,820 DEBUG root] Loading class: 'PassFailStatus' from <module 'bzt.modules.passfail' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/passfail.pyc'>
+[2018-11-28 11:29:37,821 DEBUG root] Importing module: bzt.modules.passfail
+[2018-11-28 11:29:37,821 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/passfail.pyc'>
+[2018-11-28 11:29:37,821 DEBUG root] Importing module: bzt.modules.passfail
+[2018-11-28 11:29:37,821 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/Cellar/bzt/1.13.0/libexec/lib/python2.7/site-packages/bzt/modules/passfail.pyc'>
+[2018-11-28 11:29:37,824 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.yml
+[2018-11-28 11:29:37,850 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.json
+[2018-11-28 11:29:37,851 INFO Engine] Starting...
+[2018-11-28 11:29:37,851 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x108a79350>
+[2018-11-28 11:29:37,851 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108a79b90>
+[2018-11-28 11:29:37,852 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x108a339d0>
+[2018-11-28 11:29:37,852 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x1096e2610>
+[2018-11-28 11:29:37,852 INFO Engine.console] Waiting for results...
+[2018-11-28 11:29:37,852 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x109715590>
+[2018-11-28 11:29:37,852 DEBUG Engine] Startup <bzt.modules.passfail.PassFailStatus object at 0x1097155d0>
+[2018-11-28 11:29:37,852 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x108a33650>
+[2018-11-28 11:29:37,852 DEBUG Engine.local] Delay setup for None/simple: 0(start-at) + 0(delay) = 0
+[2018-11-28 11:29:37,854 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.yml
+[2018-11-28 11:29:37,875 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.json
+[2018-11-28 11:29:37,876 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2018-11-28 11:29:37,876 DEBUG root] Leveled up log file verbosity
+[2018-11-28 11:29:37,876 DEBUG bzt.utils] Executing shell: [u'/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter', '-n', '-t', u'/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/scripts/modified_poc_jmeter_2.jmx', '-j', '/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/jmeter-8.log', '-q', '/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/jmeter-bzt-8.properties'] at /Users/rocellajimenez/Desktop/PerformanceCI
+[2018-11-28 11:29:37,893 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2018-11-28 11:29:53,989 INFO Engine.console] Current: 1 vu	249 succ	0 fail	0.002 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:29:55,013 INFO Engine.console] Current: 1 vu	581 succ	0 fail	0.001 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:29:55,981 INFO Engine.console] Current: 1 vu	747 succ	0 fail	0.001 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:29:57,025 INFO Engine.console] Current: 1 vu	909 succ	0 fail	0.001 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:29:58,062 INFO Engine.console] Current: 1 vu	988 succ	0 fail	0.001 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:29:59,073 INFO Engine.console] Current: 1 vu	1202 succ	0 fail	0.001 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:30:00,081 INFO Engine.console] Current: 1 vu	1488 succ	0 fail	0.001 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:30:01,001 INFO Engine.console] Current: 1 vu	1181 succ	0 fail	0.001 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:30:02,092 INFO Engine.console] Current: 1 vu	1350 succ	0 fail	0.001 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:30:03,003 INFO Engine.console] Current: 1 vu	1218 succ	0 fail	0.001 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:30:04,058 INFO Engine.console] Current: 1 vu	1459 succ	0 fail	0.001 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:30:23,106 INFO Engine.console] Current: 1 vu	1736 succ	0 fail	0.001 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:30:25,054 INFO Engine.console] Current: 1 vu	204 succ	0 fail	0.097 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:30:27,006 INFO Engine.console] Current: 1 vu	421 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:30:28,167 INFO Engine.console] Current: 1 vu	1477 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:30:29,037 INFO Engine.console] Current: 1 vu	407 succ	0 fail	0.002 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:30:30,100 INFO Engine.console] Current: 1 vu	1567 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:30:31,323 INFO Engine.console] Current: 1 vu	815 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:30:32,027 INFO Engine.console] Current: 1 vu	1282 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:30:33,233 INFO Engine.console] Current: 1 vu	1944 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:30:34,166 INFO Engine.console] Current: 1 vu	440 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:30:35,018 INFO Engine.console] Current: 1 vu	1888 succ	0 fail	0.001 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:30:36,167 INFO Engine.console] Current: 1 vu	1709 succ	0 fail	0.000 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:30:56,231 INFO Engine.console] Current: 1 vu	1879 succ	0 fail	0.000 avg rt	/	Cumulative: 0.001 avg rt, 0% failures
+[2018-11-28 11:30:58,300 INFO Engine.console] Current: 1 vu	649 succ	0 fail	0.032 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:31:02,993 INFO Engine.console] Current: 1 vu	1985 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:31:03,166 INFO Engine.console] Current: 1 vu	418 succ	0 fail	0.005 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:31:05,172 INFO Engine.console] Current: 1 vu	354 succ	0 fail	0.005 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:31:07,207 INFO Engine.console] Current: 1 vu	2035 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:31:08,126 INFO Engine.console] Current: 1 vu	932 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:31:29,287 INFO Engine.console] Current: 1 vu	1755 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:31:32,340 INFO Engine.console] Current: 1 vu	1566 succ	0 fail	0.013 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:31:35,386 INFO Engine.console] Current: 1 vu	1625 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:31:39,350 INFO Engine.console] Current: 1 vu	20 succ	0 fail	0.106 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:31:41,478 INFO Engine.console] Current: 1 vu	107 succ	0 fail	0.030 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:31:43,436 INFO Engine.console] Current: 1 vu	1581 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:31:44,450 INFO Engine.console] Current: 1 vu	1990 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:05,297 INFO Engine.console] Current: 1 vu	1739 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:06,191 INFO Engine.console] Current: 1 vu	1005 succ	0 fail	0.020 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:12,583 INFO Engine.console] Current: 1 vu	2091 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:13,121 INFO Engine.console] Current: 1 vu	1443 succ	0 fail	0.003 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:15,404 INFO Engine.console] Current: 1 vu	122 succ	0 fail	0.010 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:17,455 INFO Engine.console] Current: 1 vu	1148 succ	0 fail	0.002 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:38,994 INFO Engine.console] Current: 1 vu	2319 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:40,907 INFO Engine.console] Current: 1 vu	665 succ	0 fail	0.031 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:42,849 INFO Engine.console] Current: 1 vu	300 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:44,966 INFO Engine.console] Current: 1 vu	1688 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:48,790 INFO Engine.console] Current: 1 vu	1040 succ	0 fail	0.003 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:50,829 INFO Engine.console] Current: 1 vu	1310 succ	0 fail	0.003 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:52,823 INFO Engine.console] Current: 1 vu	576 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:32:53,716 INFO Engine.console] Current: 1 vu	1134 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:13,830 INFO Engine.console] Current: 1 vu	1758 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:15,955 INFO Engine.console] Current: 1 vu	340 succ	0 fail	0.060 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:17,773 INFO Engine.console] Current: 1 vu	1132 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:19,919 INFO Engine.console] Current: 1 vu	1264 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:21,816 INFO Engine.console] Current: 1 vu	2226 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:24,892 INFO Engine.console] Current: 1 vu	205 succ	0 fail	0.009 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:25,763 INFO Engine.console] Current: 1 vu	1658 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:26,885 INFO Engine.console] Current: 1 vu	207 succ	0 fail	0.009 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:48,307 INFO Engine.console] Current: 1 vu	1934 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:50,259 INFO Engine.console] Current: 1 vu	805 succ	0 fail	0.027 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:52,367 INFO Engine.console] Current: 1 vu	1416 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:53,201 INFO Engine.console] Current: 1 vu	1483 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:54,289 INFO Engine.console] Current: 1 vu	1999 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:57,344 INFO Engine.console] Current: 1 vu	716 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:33:58,185 INFO Engine.console] Current: 1 vu	1523 succ	0 fail	0.002 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:34:20,407 INFO Engine.console] Current: 1 vu	2051 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:34:24,297 INFO Engine.console] Current: 1 vu	878 succ	0 fail	0.024 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:34:26,309 INFO Engine.console] Current: 1 vu	1704 succ	0 fail	0.002 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:34:29,393 INFO Engine.console] Current: 1 vu	664 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:34:31,356 INFO Engine.console] Current: 1 vu	1630 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:34:32,273 INFO Engine.console] Current: 1 vu	358 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:34:33,362 INFO Engine.console] Current: 1 vu	1878 succ	0 fail	0.001 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:34:34,402 INFO Engine.console] Current: 1 vu	826 succ	0 fail	0.000 avg rt	/	Cumulative: 0.002 avg rt, 0% failures
+[2018-11-28 11:34:56,327 WARNING Engine] Please wait for graceful shutdown...
+[2018-11-28 11:34:56,327 DEBUG root] Leveled up log file verbosity
+[2018-11-28 11:34:56,327 INFO Engine] Shutting down...
+[2018-11-28 11:34:56,327 DEBUG Engine] Current stop reason: None
+[2018-11-28 11:34:56,328 DEBUG Engine.local] Shutdown None/simple
+[2018-11-28 11:34:56,330 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.yml
+[2018-11-28 11:34:56,356 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.json
+[2018-11-28 11:34:56,357 INFO Engine] Post-processing...
+[2018-11-28 11:34:56,357 DEBUG Engine.local] Post-process None/simple
+[2018-11-28 11:34:56,358 DEBUG Engine] Add existing artifact (move=True): /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/scripts/modified_poc_jmeter_2.jmx
+[2018-11-28 11:34:56,358 DEBUG Engine] Moving /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/scripts/modified_poc_jmeter_2.jmx to /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/modified_poc_jmeter_2.jmx
+[2018-11-28 11:34:56,358 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Reading: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/error-7.jtl
+[2018-11-28 11:34:56,358 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader.FileReader] Reading: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/kpi-7.jtl
+[2018-11-28 11:34:56,358 DEBUG Engine.jmeter.JTLReader] Buffer len: 2; Known errors count: 0
+[2018-11-28 11:34:56,358 DEBUG Engine.jmeter.JTLReader] Aggregating: 1543422873
+[2018-11-28 11:34:56,417 DEBUG Engine.jmeter.JTLReader] Aggregating: 1543422874
+[2018-11-28 11:34:56,441 DEBUG Engine.consolidator] Consolidator buffer[4]: [1543422871, 1543422872, 1543422873, 1543422874]
+[2018-11-28 11:34:56,441 DEBUG Engine.consolidator] Merging into 1543422871
+[2018-11-28 11:34:56,441 DEBUG Engine.consolidator] Merging 1543422871
+[2018-11-28 11:34:56,444 DEBUG Engine.consolidator] Processed datapoint: 1543422871/None
+[2018-11-28 11:34:56,444 DEBUG Engine.consolidator] Merging into 1543422872
+[2018-11-28 11:34:56,444 DEBUG Engine.consolidator] Merging 1543422872
+[2018-11-28 11:34:56,446 DEBUG Engine.consolidator] Processed datapoint: 1543422872/None
+[2018-11-28 11:34:56,446 DEBUG Engine.consolidator] Merging into 1543422873
+[2018-11-28 11:34:56,446 DEBUG Engine.consolidator] Merging 1543422873
+[2018-11-28 11:34:56,448 DEBUG Engine.consolidator] Processed datapoint: 1543422873/None
+[2018-11-28 11:34:56,448 DEBUG Engine.consolidator] Merging into 1543422874
+[2018-11-28 11:34:56,448 DEBUG Engine.consolidator] Merging 1543422874
+[2018-11-28 11:34:56,451 DEBUG Engine.consolidator] Processed datapoint: 1543422874/None
+[2018-11-28 11:34:56,451 INFO Engine.final-stats] Test duration: 0:05:19
+[2018-11-28 11:34:56,451 INFO Engine.final-stats] Samples count: 147271, 0.00% failures
+[2018-11-28 11:34:56,452 INFO Engine.final-stats] Average times: total 0.002, latency 0.002, connect 0.002
+[2018-11-28 11:34:56,455 INFO Engine.final-stats] Percentiles:
 (0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
 (0x(B Percentile, % (0x(B Resp. Time, s (0x(B
 (0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
 (0x(B           0.0 (0x(B           0.0 (0x(B
-(0x(B          50.0 (0x(B         0.001 (0x(B
+(0x(B          50.0 (0x(B           0.0 (0x(B
 (0x(B          90.0 (0x(B         0.001 (0x(B
 (0x(B          95.0 (0x(B         0.001 (0x(B
-(0x(B          99.0 (0x(B         0.002 (0x(B
-(0x(B          99.9 (0x(B         0.015 (0x(B
-(0x(B         100.0 (0x(B        19.823 (0x(B
+(0x(B          99.0 (0x(B         0.001 (0x(B
+(0x(B          99.9 (0x(B         0.004 (0x(B
+(0x(B         100.0 (0x(B        21.743 (0x(B
 (0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
-[2018-11-28 10:25:49,466 INFO Engine.final-stats] Request label stats:
+[2018-11-28 11:34:56,457 INFO Engine.final-stats] Request label stats:
 (0lqqqqqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqqqwqqqqqqqqwqqqqqqqk(B
 (0x(B label            (0x(B status (0x(B    succ (0x(B avg_rt (0x(B error (0x(B
 (0tqqqqqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqqqnqqqqqqqqnqqqqqqqu(B
 (0x(B Retrieve Expense (0x(B   OK   (0x(B 100.00% (0x(B  0.003 (0x(B       (0x(B
-(0x(B Retrieve Main    (0x(B   OK   (0x(B 100.00% (0x(B  0.004 (0x(B       (0x(B
+(0x(B Retrieve Main    (0x(B   OK   (0x(B 100.00% (0x(B  0.001 (0x(B       (0x(B
 (0x(B Retrieve Users   (0x(B   OK   (0x(B 100.00% (0x(B  0.002 (0x(B       (0x(B
 (0mqqqqqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqqqvqqqqqqqqvqqqqqqqj(B
-[2018-11-28 10:25:49,466 DEBUG Engine.console] No logger_handler or orig_stream was detected
-[2018-11-28 10:25:49,466 INFO Engine.final_stats] Test duration: 0:05:03
-[2018-11-28 10:25:49,466 INFO Engine.final_stats] Samples count: 98119, 0.00% failures
-[2018-11-28 10:25:49,466 DEBUG root] No label health_check < in [u'Retrieve Expense', '', u'Retrieve Users', u'Retrieve Main']
-[2018-11-28 10:25:49,466 DEBUG root] No label health_check  in [u'Retrieve Expense', '', u'Retrieve Users', u'Retrieve Main']
-[2018-11-28 10:25:49,469 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.yml
-[2018-11-28 10:25:49,496 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.json
-[2018-11-28 10:25:49,498 INFO root] Artifacts dir: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp
-[2018-11-28 10:25:49,498 INFO root] Done performing with code: 0
-[2018-11-28 10:25:49,498 DEBUG root] Closing log handler: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/bzt.log
+[2018-11-28 11:34:56,457 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2018-11-28 11:34:56,457 INFO Engine.final_stats] Test duration: 0:05:19
+[2018-11-28 11:34:56,457 INFO Engine.final_stats] Samples count: 147271, 0.00% failures
+[2018-11-28 11:34:56,457 DEBUG root] No label health_check < in [u'Retrieve Expense', '', u'Retrieve Users', u'Retrieve Main']
+[2018-11-28 11:34:56,457 DEBUG root] No label health_check  in [u'Retrieve Expense', '', u'Retrieve Users', u'Retrieve Main']
+[2018-11-28 11:34:56,459 DEBUG Engine.Configuration] Dumping YAML config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.yml
+[2018-11-28 11:34:56,482 DEBUG Engine.Configuration] Dumping JSON config into /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/effective.json
+[2018-11-28 11:34:56,483 INFO root] Artifacts dir: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp
+[2018-11-28 11:34:56,483 INFO root] Done performing with code: 0
+[2018-11-28 11:34:56,484 DEBUG root] Closing log handler: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp/bzt.log
