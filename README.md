@@ -46,7 +46,7 @@ Configure repository with circle ci
           - checkout
           - run: 
               name: initiate benchmark test
-              command: 'benchmark/jmeter/apache-jmeter-5.0/bin/./jmeter -n -t benchmark/scripts/poc_jmeter_2.jmx'
+              command: '<jmeter> -n -t <jmeter jmx file>'
     ```
     ##### Taurus   
     ```sh
@@ -63,7 +63,7 @@ Configure repository with circle ci
           command: 'sudo pip install bzt'
       - run: 
           name: 'Initiate benchmark test'
-          command: 'bzt benchmark/scripts/poc_jmeter_2.yml -report'
+          command: 'bzt <taurus yml file> -report'
     ```
     
 4. Add a workflow 
@@ -112,7 +112,7 @@ Configure repository with circle ci
               command: 'sudo pip install bzt'
           - run: 
               name: 'Initiate benchmark test'
-              command: 'bzt benchmark/scripts/poc_jmeter_2.yml'
+              command: 'bzt <taurus yml file>'
      ````
      
 # React/Knex/PostgreSQL
