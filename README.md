@@ -113,7 +113,7 @@ Configure repository with circle ci
           - run: 
               name: 'Initiate benchmark test'
               command: 'bzt benchmark/scripts/poc_jmeter_2.yml'
-     ```
+     ````
      
 # React/Knex/PostgreSQL
 
