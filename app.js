@@ -3,7 +3,7 @@ const db = require('./routes/queries')
 const bodyParser = require('body-parser')
 const app = express()
 const port = 3001
-const host = '0.0.0.0'
+const host = '127.0.0.1'
 
 app.use(bodyParser.json())
 app.use(
@@ -24,5 +24,5 @@ app.post('/expense', db.createExpense)
 //   })
 
 app.listen(port, host, () => { 
-  console.log(`App running on port ${port}.`)
+  console.log(`App running on ${host}:${port}.`)
 })
