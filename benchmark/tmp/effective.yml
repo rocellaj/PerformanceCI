@@ -54,7 +54,7 @@ cli-aliases:
 execution:
 - concurrency:
     local: 1
-  hold-for: 1m
+  hold-for: 5m
   scenario: simple
   throughput:
     local: null
@@ -111,7 +111,7 @@ modules:
     detect-plugins: false
     download-link: https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.0.zip
     force-ctg: true
-    path: /Users/rocellajimenez/Desktop/poc_v2/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
+    path: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter
     plugins:
     - jpgc-casutg
     - jpgc-dummy
@@ -154,6 +154,12 @@ modules:
     class: bzt.modules.passfail.PassFailStatus
   pbench:
     class: bzt.modules.pbench.PBenchExecutor
+  percentiles:
+  - 0.0
+  - 50.0
+  - 90.0
+  - 95.0
+  - 99.9
   proxy2jmx:
     class: bzt.modules.proxy2jmx.Proxy2JMX
   pytest:
@@ -214,7 +220,7 @@ reporting:
   module: passfail
 scenarios:
   simple:
-    script: /Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/poc_jmeter_2.jmx
+    script: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/scripts/poc_jmeter_2.jmx
 services:
 - local:
   - metrics:
@@ -234,6 +240,6 @@ settings:
   default-executor: jmeter
   env:
     OBJC_DISABLE_INITIALIZE_FORK_SAFETY: 'YES'
-    TAURUS_ARTIFACTS_DIR: /Users/rocellajimenez/Desktop/poc_v2/benchmark/tmp
+    TAURUS_ARTIFACTS_DIR: /Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp
 version: 1.13.0
 

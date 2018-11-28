@@ -5,12 +5,9 @@ module.exports = {
 
       client: 'pg',
       connection: {
-
           host: 'localhost',
-
           user: 'root',
           password: '',
-
           database: 'circle_test',
           charset: 'utf8',
       }

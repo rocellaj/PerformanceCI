@@ -88,7 +88,7 @@
  "settings": {
   "aggregator": "consolidator", 
   "env": {
-   "TAURUS_ARTIFACTS_DIR": "/Users/rocellajimenez/Desktop/poc_v2/benchmark/tmp", 
+   "TAURUS_ARTIFACTS_DIR": "/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/tmp", 
    "OBJC_DISABLE_INITIALIZE_FORK_SAFETY": "YES"
   }, 
   "artifacts-dir": "benchmark/tmp", 
@@ -258,12 +258,19 @@
     "jpgc-prmctl", 
     "jpgc-tst"
    ], 
-   "path": "/Users/rocellajimenez/Desktop/poc_v2/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter", 
+   "path": "/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/jmeter/apache-jmeter-5.0/bin/jmeter", 
    "class": "bzt.modules.jmeter.JMeterExecutor", 
    "protocol-handlers": {
     "http": "bzt.jmx.http.HTTPProtocolHandler"
    }
   }, 
+  "percentiles": [
+   0, 
+   50, 
+   90, 
+   95, 
+   99.9
+  ], 
   "apiritif": {
    "class": "bzt.modules.python.ApiritifNoseExecutor"
   }, 
@@ -310,7 +317,7 @@
  "provisioning": "local", 
  "scenarios": {
   "simple": {
-   "script": "/Users/rocellajimenez/Desktop/poc_v2/benchmark/scripts/poc_jmeter_2.jmx"
+   "script": "/Users/rocellajimenez/Desktop/PerformanceCI/benchmark/scripts/poc_jmeter_2.jmx"
   }
  }, 
  "version": "1.13.0", 
@@ -341,7 +348,7 @@
    "throughput": {
     "local": null
    }, 
-   "hold-for": "1m", 
+   "hold-for": "5m", 
    "concurrency": {
     "local": 1
    }
