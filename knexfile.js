@@ -5,7 +5,7 @@ module.exports = {
 
       client: 'pg',
       connection: {
-          host: 'localhost',
+          host: '127.0.0.1',
           user: 'root',
           password: '',
           database: 'circle_test',
