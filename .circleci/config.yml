@@ -33,6 +33,7 @@ jobs:
           name: 'Start Application'
           command: yarn start
           background: true
+      - run: cat /etc/hosts
       - run: 
           name: 'Install taurus'
           command: 'sudo pip install bzt'
