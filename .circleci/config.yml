@@ -29,11 +29,6 @@ jobs:
             sudo npm install knex -g
             knex migrate:latest
             knex seed:run
-      - run: 'sudo echo 1024 65000 > /proc/sys/net/ipv4/ip_local_port_range'
-      - run: 'sudo sysctl -w net.ipv4.tcp_tw_recycle =1'
-      - run: 'cat /proc/sys/net/ipv4/tcp_tw_recycle'
-      - run: 'sudo sysctl -w net.ipv4.tcp_tw_reuse=1'
-      
       - run: 
           name: 'Start Application'
           command: yarn start

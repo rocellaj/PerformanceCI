@@ -16,6 +16,10 @@ app.use(
 )
 app.get('/', (request, response) => {
     response.json({ info: 'This is a sample application' })
+
+    setTimeout(() => {
+      response.send('done')
+    }, 1800)
   })
 
 app.get('/users', db.getUsers)
@@ -30,6 +34,8 @@ app.post('/expense', db.createExpense)
 //   console.log(`App running on ${host}:${port}.`)
 // })
 
-app.listen(app.get('port'), app.get('host'), function(){
+const server = app.listen(app.get('port'), app.get('host'), function(){
   console.log("Express server listening on port " + app.get('port') + app.get ('host'));
 });
+
+server.timeout = 240000;
