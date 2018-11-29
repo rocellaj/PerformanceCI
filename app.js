@@ -16,10 +16,7 @@ app.use(
 )
 app.get('/', (request, response) => {
     response.json({ info: 'This is a sample application' })
-
-    // setTimeout(() => {
-    //   response.send('done')
-    // }, 1800)
+    response.end()  
   })
 
 app.get('/users', db.getUsers)

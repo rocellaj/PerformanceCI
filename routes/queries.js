@@ -3,9 +3,9 @@
  */
 const Pool = require('pg').Pool
 const pool = new Pool({
-  user: 'root',
+  user: 'rocellajimenez',
   host: '127.0.0.1',
-  database: 'circle_test',
+  database: 'travel',
   password: '',
   port: 5432,
 })
@@ -21,6 +21,7 @@ const getUsers = (request, response) => {
       }
       response.status(200).json(results.rows)
     })
+    response.end() 
     // console.log (results.row)
   }
 
@@ -31,6 +32,7 @@ const getUsers = (request, response) => {
       }
       response.status(200).json(results.rows)
     })
+    response.end()
   }
 
   /**
@@ -49,6 +51,7 @@ const getUsers = (request, response) => {
       const id = results.rows;
       response.status(201).send(id)
     })
+    response.end
   }
 
   module.exports = {
